@@ -7,3 +7,9 @@ D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.FrmPrincipal.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBlog.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmInicio.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmLivros.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmPosts.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmUsuarios.resources

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Conexao.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,15 +60,59 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FrmBlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmBlog.Designer.cs">
+      <DependentUpon>FrmBlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmLivros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmLivros.Designer.cs">
+      <DependentUpon>FrmLivros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmPosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmPosts.Designer.cs">
+      <DependentUpon>FrmPosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Views\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmBlog.resx">
+      <DependentUpon>FrmBlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmLivros.resx">
+      <DependentUpon>FrmLivros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmPosts.resx">
+      <DependentUpon>FrmPosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,7 +129,27 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
-    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_2_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbar_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-casa-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
