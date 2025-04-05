@@ -93,6 +93,16 @@ namespace versami_desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grupo_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Grupo Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20 {
             get {
                 object obj = ResourceManager.GetObject("home_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20", resourceCulture);

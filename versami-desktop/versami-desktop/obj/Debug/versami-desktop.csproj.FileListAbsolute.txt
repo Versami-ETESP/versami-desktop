@@ -13,3 +13,5 @@ D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmLivros.resources
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmPosts.resources
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmUsuarios.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.frmLogin.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmCadastro.resources

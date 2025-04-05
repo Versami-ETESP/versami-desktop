@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using versami_desktop.Entities;
 using versami_desktop.Views;
 
 namespace versami_desktop
@@ -52,6 +53,10 @@ namespace versami_desktop
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            frmLogin fl = new frmLogin();
+            fl.ShowDialog();
+            Admin adm = new Admin();
+            lblNomeAdmin.Text = adm.getNome();
             activeButton(btnInicio);
             formShow(new FrmInicio());
         }
