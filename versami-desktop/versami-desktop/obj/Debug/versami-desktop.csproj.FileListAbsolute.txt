@@ -1,0 +1,9 @@
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe.config
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.pdb
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.AssemblyReference.cache
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Properties.Resources.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.GenerateResource.cache
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
