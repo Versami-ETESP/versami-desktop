@@ -55,6 +55,12 @@
     </Compile>
     <Compile Include="Util\Conexao.cs" />
     <Compile Include="Util\ValidaDados.cs" />
+    <Compile Include="Views\FrmBugs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmBugs.Designer.cs">
+      <DependentUpon>FrmBugs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <EmbeddedResource Include="Views\FrmBlog.resx">
       <DependentUpon>FrmBlog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmBugs.resx">
+      <DependentUpon>FrmBugs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,7 +156,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\bug_report_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" />
   </ItemGroup>

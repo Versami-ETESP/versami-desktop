@@ -284,12 +284,11 @@
             // 
             // lblMensagem
             // 
-            this.lblMensagem.AutoSize = true;
             this.lblMensagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensagem.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblMensagem.Location = new System.Drawing.Point(288, 512);
+            this.lblMensagem.Location = new System.Drawing.Point(100, 512);
             this.lblMensagem.Name = "lblMensagem";
-            this.lblMensagem.Size = new System.Drawing.Size(0, 20);
+            this.lblMensagem.Size = new System.Drawing.Size(633, 36);
             this.lblMensagem.TabIndex = 22;
             this.lblMensagem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -324,6 +323,7 @@
             this.Name = "FrmCadastro";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();

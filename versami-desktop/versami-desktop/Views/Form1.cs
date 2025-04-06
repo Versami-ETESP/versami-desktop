@@ -57,6 +57,7 @@ namespace versami_desktop
             fl.ShowDialog();
             Admin adm = new Admin();
             lblNomeAdmin.Text = adm.getNome();
+            lblPermissao.Text = tipoAdmin(adm.getPermissao());
             activeButton(btnInicio);
             formShow(new FrmInicio());
         }
@@ -88,6 +89,31 @@ namespace versami_desktop
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnBugs_Click(object sender, EventArgs e)
+        {
+            activeButton(btnBugs);
+            formShow(new FrmBugs());
+        }
+
+        public string tipoAdmin(int permissao)
+        {
+            switch (permissao)
+            {
+                case 1:
+                    return "ADM Master";
+                case 2:
+                    return "ADM de Livros";
+                case 3:
+                    return "ADM Moderador";
+                case 4:
+                    return "ADM de Usuários";
+                case 5:
+                    return "ADM do Blog";
+                default:
+                    return "Administrador";
+            }
         }
     }
 }

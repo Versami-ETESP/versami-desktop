@@ -51,7 +51,7 @@ namespace versami_desktop.Controllers
         public bool cadastrar(Admin adm)
         {
             string sql = "INSERT INTO " + tabela + " VALUES ('" + adm.getNome() + "','" + adm.getNasc() + "','" + adm.getEmail() + "','" + adm.getSenha() + "','" + adm.getArroba() + "'," + adm.getPermissao().ToString() + ");";
-            MessageBox.Show(sql);
+            //MessageBox.Show(sql);
             try
             {
                 con = new Conexao();
