@@ -16,6 +16,8 @@ namespace versami_desktop.Util
         {
             try
             {
+                if (conexao == null)
+                    conexao = new SqlConnection();
                 String strConexao = "Password=Tc2088275; Persist Security Info=True; User ID=sa; Initial Catalog=versami; Data Source=" + Environment.MachineName + "\\SqlExpress";
                 conexao.ConnectionString = strConexao;
                 conexao.Open();

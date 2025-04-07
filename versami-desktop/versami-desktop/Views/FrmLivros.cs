@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using versami_desktop.Entities;
 using versami_desktop.Util;
 
 namespace versami_desktop.Views
@@ -15,6 +16,7 @@ namespace versami_desktop.Views
     {
         Conexao con;
         DataTable dt;
+        Autor autor = new Autor();
         public FrmLivros()
         {
             InitializeComponent();
@@ -64,7 +66,7 @@ namespace versami_desktop.Views
             //altera o nome das colunas
             gridLivros.Columns[0].HeaderText = "ID";
             gridLivros.Columns[1].HeaderText = "NOME DO LIVRO";
-            gridLivros.Columns[2].HeaderText = "DESCRIÇAO";
+            gridLivros.Columns[2].HeaderText = "DESCRIÇÃO";
            //altera o tamanho das colunas
             gridLivros.Columns[0].Width = 28;
             gridLivros.Columns[1].Width = 250;
@@ -75,6 +77,62 @@ namespace versami_desktop.Views
             gridLivros.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             //Expande a célula automáticamente
             gridLivros.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+        }
+
+        private void limparCampos()
+        {
+            txtAutor.Text = "";
+            txtDescLivros.Text = "";
+            txtGenero.Text = "";
+            txtIdLivro.Text = "";
+            txtNomeLivro.Text = "";
+        }
+
+        private void gridLivros_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex > -1)
+            {
+                string id = gridLivros.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtIdLivro.Text = id;
+
+                try
+                {
+                    con = new Conexao();
+                    dt = con.executarSQL("SELECT * FROM tblLivro WHERE idLivro=" + id);
+
+                    string idAutor = dt.Rows[0]["idAutor"].ToString(), idGenero = dt.Rows[0]["idGenero"].ToString();
+
+                    txtNomeLivro.Text = dt.Rows[0]["nomeLivro"].ToString();
+                    txtDescLivros.Text = dt.Rows[0]["descLivro"].ToString();
+
+                    dt = con.executarSQL("SELECT nomeAutor FROM tblAutor WHERE idAutor=" + idAutor);
+                    txtAutor.Text = dt.Rows[0]["nomeAutor"].ToString();
+
+                    dt = con.executarSQL("SELECT nomeGenero FROM tblGenero WHERE idGenero=" + idGenero);
+                    txtGenero.Text = dt.Rows[0]["nomeGenero"].ToString();
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("Erro Consulta SQL: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnBuscarAutor_Click(object sender, EventArgs e)
+        {
+            FrmBuscaAutor ba = new FrmBuscaAutor();
+            ba.ShowDialog();
+        }
+
+        private void FrmLivros_Enter(object sender, EventArgs e)
+        {
+            //to do - fazer funcionar a busca de livros = esse evento nao funciona com form embutido
+            //MessageBox.Show(autor.getAutorID().ToString());
+            if (autor.getAutorID() > 0)
+            {
+                dt = con.executarSQL("SELECT nomeAutor FROM tblAutor WHERE idAutor=" + autor.getAutorID());
+                txtAutor.Text = dt.Rows[0]["nomeAutor"].ToString();
+            }
         }
     }
 }
