@@ -17,6 +17,7 @@ namespace versami_desktop.Views
         Conexao con;
         DataTable dt;
         Autor autor = new Autor();
+        Genero genero = new Genero();
         public FrmLivros()
         {
             InitializeComponent();
@@ -121,18 +122,30 @@ namespace versami_desktop.Views
         private void btnBuscarAutor_Click(object sender, EventArgs e)
         {
             FrmBuscaAutor ba = new FrmBuscaAutor();
-            ba.ShowDialog();
+
+            if(ba.ShowDialog() == DialogResult.OK)
+            {
+                if (autor.getAutorID() > 0)
+                {
+                    dt = con.executarSQL("SELECT nomeAutor FROM tblAutor WHERE idAutor=" + autor.getAutorID());
+                    txtAutor.Text = dt.Rows[0]["nomeAutor"].ToString();
+                }
+            }
+            
         }
 
-        private void FrmLivros_Enter(object sender, EventArgs e)
+        private void btnBuscarGenero_Click(object sender, EventArgs e)
         {
-            //to do - fazer funcionar a busca de livros = esse evento nao funciona com form embutido
-            //MessageBox.Show(autor.getAutorID().ToString());
-            if (autor.getAutorID() > 0)
+            FrmBuscaGenero bg = new FrmBuscaGenero();
+            if(bg.ShowDialog() == DialogResult.OK)
             {
-                dt = con.executarSQL("SELECT nomeAutor FROM tblAutor WHERE idAutor=" + autor.getAutorID());
-                txtAutor.Text = dt.Rows[0]["nomeAutor"].ToString();
+                if (genero.getGeneroID() > 0)
+                {
+                    dt = con.executarSQL("SELECT nomeGenero FROM tblGenero WHERE idGenero=" + genero.getGeneroID());
+                    txtGenero.Text = dt.Rows[0]["nomeGenero"].ToString();
+                }
             }
+            
         }
     }
 }

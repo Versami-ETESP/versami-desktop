@@ -197,6 +197,7 @@
             this.btnBuscarGenero.TabIndex = 14;
             this.btnBuscarGenero.Text = "Buscar";
             this.btnBuscarGenero.UseVisualStyleBackColor = false;
+            this.btnBuscarGenero.Click += new System.EventHandler(this.btnBuscarGenero_Click);
             // 
             // btnBuscarAutor
             // 
@@ -341,7 +342,6 @@
             this.Name = "FrmLivros";
             this.Text = "FrmLivros";
             this.Load += new System.EventHandler(this.FrmLivros_Load);
-            this.Enter += new System.EventHandler(this.FrmLivros_Enter);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridLivros)).EndInit();
             this.panel2.ResumeLayout(false);

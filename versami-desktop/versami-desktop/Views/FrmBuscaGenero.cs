@@ -12,24 +12,23 @@ using versami_desktop.Util;
 
 namespace versami_desktop.Views
 {
-    public partial class FrmBuscaAutor: Form
+    public partial class FrmBuscaGenero: Form
     {
         Conexao con;
         DataTable dt;
-        Autor aut = new Autor();
-
-        public FrmBuscaAutor()
+        Genero gen = new Genero();
+        public FrmBuscaGenero()
         {
             InitializeComponent();
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            string nomeAut = txtNome.Text;
+            string nomeGen = txtNome.Text;
             try
             {
                 con = new Conexao();
-                dt = con.executarSQL("SELECT idAutor, nomeAutor FROM tblAutor WHERE nomeAutor LIKE '%" + nomeAut + "%'");
+                dt = con.executarSQL("SELECT idGenero, nomeGenero FROM tblGenero WHERE nomeGenero LIKE '%" + nomeGen + "%'");
                 dataGridView1.DataSource = dt;
             }
             catch (Exception ex)
@@ -40,9 +39,9 @@ namespace versami_desktop.Views
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex > -1)
+            if (e.RowIndex > -1)
             {
-                aut.setAutorID(Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));
+                gen.setGeneroID(Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));
                 DialogResult = DialogResult.OK;
                 this.Close();
             }
