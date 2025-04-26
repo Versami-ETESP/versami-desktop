@@ -61,16 +61,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(77)))), ((int)(((byte)(108)))));
             this.panel1.Controls.Add(this.gridLivros);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(16, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 401);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(918, 262);
+            this.panel1.Size = new System.Drawing.Size(924, 226);
             this.panel1.TabIndex = 0;
             // 
             // gridLivros
             // 
             this.gridLivros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridLivros.Location = new System.Drawing.Point(19, 39);
+            this.gridLivros.Location = new System.Drawing.Point(20, 15);
             this.gridLivros.Name = "gridLivros";
             this.gridLivros.Size = new System.Drawing.Size(882, 197);
             this.gridLivros.TabIndex = 1;
@@ -80,7 +79,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(42)))), ((int)(((byte)(65)))));
-            this.label1.Location = new System.Drawing.Point(409, 0);
+            this.label1.Location = new System.Drawing.Point(319, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 36);
             this.label1.TabIndex = 0;
@@ -91,6 +90,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(77)))), ((int)(((byte)(108)))));
             this.panel2.Controls.Add(this.btnExcluir);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnAdicionar);
             this.panel2.Controls.Add(this.btnSalvar);
             this.panel2.Controls.Add(this.btnEditar);
@@ -109,10 +109,10 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtIdLivro);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(116, 291);
+            this.panel2.Location = new System.Drawing.Point(105, 11);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(707, 336);
-            this.panel2.TabIndex = 1;
+            this.panel2.Size = new System.Drawing.Size(712, 372);
+            this.panel2.TabIndex = 2;
             // 
             // btnExcluir
             // 
@@ -121,7 +121,7 @@
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(566, 188);
+            this.btnExcluir.Location = new System.Drawing.Point(581, 213);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(110, 38);
             this.btnExcluir.TabIndex = 19;
@@ -135,7 +135,7 @@
             this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionar.ForeColor = System.Drawing.Color.White;
-            this.btnAdicionar.Location = new System.Drawing.Point(566, 138);
+            this.btnAdicionar.Location = new System.Drawing.Point(581, 163);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(110, 38);
             this.btnAdicionar.TabIndex = 18;
@@ -149,7 +149,7 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(566, 89);
+            this.btnSalvar.Location = new System.Drawing.Point(581, 114);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(110, 38);
             this.btnSalvar.TabIndex = 17;
@@ -163,7 +163,7 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Location = new System.Drawing.Point(566, 37);
+            this.btnEditar.Location = new System.Drawing.Point(581, 62);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(110, 38);
             this.btnEditar.TabIndex = 16;
@@ -177,7 +177,7 @@
             this.btnBuscarLivro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarLivro.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarLivro.Location = new System.Drawing.Point(300, 76);
+            this.btnBuscarLivro.Location = new System.Drawing.Point(299, 112);
             this.btnBuscarLivro.Name = "btnBuscarLivro";
             this.btnBuscarLivro.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarLivro.TabIndex = 15;
@@ -191,13 +191,12 @@
             this.btnBuscarGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarGenero.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarGenero.Location = new System.Drawing.Point(300, 177);
+            this.btnBuscarGenero.Location = new System.Drawing.Point(299, 213);
             this.btnBuscarGenero.Name = "btnBuscarGenero";
             this.btnBuscarGenero.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarGenero.TabIndex = 14;
             this.btnBuscarGenero.Text = "Buscar";
             this.btnBuscarGenero.UseVisualStyleBackColor = false;
-            this.btnBuscarGenero.Click += new System.EventHandler(this.btnBuscarGenero_Click);
             // 
             // btnBuscarAutor
             // 
@@ -206,18 +205,17 @@
             this.btnBuscarAutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscarAutor.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarAutor.Location = new System.Drawing.Point(300, 124);
+            this.btnBuscarAutor.Location = new System.Drawing.Point(299, 160);
             this.btnBuscarAutor.Name = "btnBuscarAutor";
             this.btnBuscarAutor.Size = new System.Drawing.Size(75, 23);
             this.btnBuscarAutor.TabIndex = 13;
             this.btnBuscarAutor.Text = "Buscar";
             this.btnBuscarAutor.UseVisualStyleBackColor = false;
-            this.btnBuscarAutor.Click += new System.EventHandler(this.btnBuscarAutor_Click);
             // 
             // txtDescLivros
             // 
             this.txtDescLivros.Enabled = false;
-            this.txtDescLivros.Location = new System.Drawing.Point(28, 238);
+            this.txtDescLivros.Location = new System.Drawing.Point(27, 274);
             this.txtDescLivros.Name = "txtDescLivros";
             this.txtDescLivros.Size = new System.Drawing.Size(347, 76);
             this.txtDescLivros.TabIndex = 12;
@@ -228,7 +226,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(405, 12);
+            this.label7.Location = new System.Drawing.Point(420, 37);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 15);
             this.label7.TabIndex = 11;
@@ -237,7 +235,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox1.Location = new System.Drawing.Point(399, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(414, 64);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(134, 187);
             this.pictureBox1.TabIndex = 10;
@@ -246,7 +244,7 @@
             // txtGenero
             // 
             this.txtGenero.Enabled = false;
-            this.txtGenero.Location = new System.Drawing.Point(28, 177);
+            this.txtGenero.Location = new System.Drawing.Point(27, 213);
             this.txtGenero.Name = "txtGenero";
             this.txtGenero.Size = new System.Drawing.Size(246, 20);
             this.txtGenero.TabIndex = 9;
@@ -256,7 +254,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(25, 161);
+            this.label6.Location = new System.Drawing.Point(24, 197);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 15);
             this.label6.TabIndex = 8;
@@ -265,7 +263,7 @@
             // txtAutor
             // 
             this.txtAutor.Enabled = false;
-            this.txtAutor.Location = new System.Drawing.Point(28, 128);
+            this.txtAutor.Location = new System.Drawing.Point(27, 164);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(246, 20);
             this.txtAutor.TabIndex = 7;
@@ -275,7 +273,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(25, 112);
+            this.label5.Location = new System.Drawing.Point(24, 148);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 15);
             this.label5.TabIndex = 6;
@@ -286,7 +284,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(25, 211);
+            this.label4.Location = new System.Drawing.Point(24, 247);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 15);
             this.label4.TabIndex = 4;
@@ -295,7 +293,7 @@
             // txtNomeLivro
             // 
             this.txtNomeLivro.Enabled = false;
-            this.txtNomeLivro.Location = new System.Drawing.Point(28, 76);
+            this.txtNomeLivro.Location = new System.Drawing.Point(27, 112);
             this.txtNomeLivro.Name = "txtNomeLivro";
             this.txtNomeLivro.Size = new System.Drawing.Size(246, 20);
             this.txtNomeLivro.TabIndex = 3;
@@ -305,7 +303,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(25, 60);
+            this.label3.Location = new System.Drawing.Point(24, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 15);
             this.label3.TabIndex = 2;
@@ -314,7 +312,7 @@
             // txtIdLivro
             // 
             this.txtIdLivro.Enabled = false;
-            this.txtIdLivro.Location = new System.Drawing.Point(28, 28);
+            this.txtIdLivro.Location = new System.Drawing.Point(27, 64);
             this.txtIdLivro.Name = "txtIdLivro";
             this.txtIdLivro.Size = new System.Drawing.Size(246, 20);
             this.txtIdLivro.TabIndex = 1;
@@ -324,7 +322,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(25, 12);
+            this.label2.Location = new System.Drawing.Point(24, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 15);
             this.label2.TabIndex = 0;
@@ -357,6 +355,14 @@
         private System.Windows.Forms.DataGridView gridLivros;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAdicionar;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnBuscarLivro;
+        private System.Windows.Forms.Button btnBuscarGenero;
+        private System.Windows.Forms.Button btnBuscarAutor;
+        private System.Windows.Forms.RichTextBox txtDescLivros;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtGenero;
@@ -368,13 +374,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtIdLivro;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox txtDescLivros;
-        private System.Windows.Forms.Button btnBuscarGenero;
-        private System.Windows.Forms.Button btnBuscarAutor;
-        private System.Windows.Forms.Button btnBuscarLivro;
-        private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnEditar;
     }
 }

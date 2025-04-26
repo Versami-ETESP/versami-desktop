@@ -23,9 +23,9 @@ namespace versami_desktop.Views
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            string arroba = txtArroba.Text, senha = txtSenha.Text;
+            string arroba = txtArroba.Text, senha = lc.getHash(txtSenha.Text);
 
-            if(lc.logar(arroba, senha))
+            if(senha.Equals(lc.logar(arroba)))
             {
                 correctLogin = true;
                 this.Close();
