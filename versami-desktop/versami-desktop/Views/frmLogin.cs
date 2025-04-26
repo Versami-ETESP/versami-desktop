@@ -50,5 +50,11 @@ namespace versami_desktop.Views
             FrmCadastro fc = new FrmCadastro();
             fc.ShowDialog();
         }
+
+        private void lblTrocasenha_Click(object sender, EventArgs e)
+        {
+            FrmAlteraSenha altera = new FrmAlteraSenha();
+            altera.ShowDialog();
+        }
     }
 }

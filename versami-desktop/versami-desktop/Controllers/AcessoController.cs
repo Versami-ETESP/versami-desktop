@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,20 +15,20 @@ namespace versami_desktop.Controllers
     {
         private Conexao con;
         private DataTable dt;
-        private String tabela = "tblAdmin";
 
         public string logar(string nome)
         {
-
-            string sql = "SELECT idAdmin, nome, arroba_usuario, permissao, senha FROM " + tabela + " WHERE arroba_usuario='" + nome + "';";
+            string sql = "SELECT idAdmin, nome, arroba_usuario, permissao, senha FROM tblAdmin WHERE arroba_usuario=@arroba";
+            SqlCommand cmd = new SqlCommand(sql);
+            cmd.Parameters.AddWithValue("@arroba", nome);
             string hash = "";
 
             try
             {
                 con = new Conexao();
-                dt = con.executarSQL(sql);
+                dt = con.queryComParametros(cmd);
 
-                if(dt.Rows.Count > 0 && dt != null)
+                if(dt != null && dt.Rows.Count > 0)
                 {
                     Admin adm = new Admin();
                     adm.setId(Convert.ToInt32(dt.Rows[0]["idAdmin"].ToString()));
@@ -39,7 +40,7 @@ namespace versami_desktop.Controllers
 
             }catch(Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Erro na consulta SQL Login: "+ e.Message);
             }
 
             return hash;
@@ -47,20 +48,31 @@ namespace versami_desktop.Controllers
 
         public bool cadastrar(Admin adm)
         {
-            string sql = "INSERT INTO " + tabela + " VALUES ('" + adm.getNome() + "','" + adm.getNasc() + "','" + adm.getEmail() + "','" + adm.getSenha() + "','" + adm.getArroba() + "'," + adm.getPermissao() + ","+adm.getIdPergunta() + ",'"+adm.getResposta() + "');";
-            //MessageBox.Show(sql);
+            bool resultado = false;
+            string sql = "INSERT INTO tblAdmin (nome,data_nasc,email,senha,arroba_usuario,permissao,pergunta,resposta) " +
+                "VALUES (@nome,@data,@email,@senha,@arroba,@permissao,@pergunta,@resposta)";
+            SqlCommand cmd = new SqlCommand(sql);
+
+            cmd.Parameters.AddWithValue("@nome", adm.getNome());
+            cmd.Parameters.AddWithValue("@data", adm.getNasc());
+            cmd.Parameters.AddWithValue("@email", adm.getEmail());
+            cmd.Parameters.AddWithValue("@senha", adm.getSenha());
+            cmd.Parameters.AddWithValue("@arroba", adm.getArroba());
+            cmd.Parameters.AddWithValue("@permissao", adm.getPermissao());
+            cmd.Parameters.AddWithValue("@pergunta", adm.getIdPergunta());
+            cmd.Parameters.AddWithValue("@resposta", adm.getResposta());
+
             try
             {
                 con = new Conexao();
-                con.executarSQL(sql);
+                resultado = con.updateComParametros(cmd) > 0;
 
             }catch(Exception e)
             {
-                Console.WriteLine("Erro no Insert SQL: " + e.Message);
-                return false;
+                Console.WriteLine("Erro no Insert SQL Cadastro: " + e.Message);
             }
 
-            return true;
+            return resultado;
         }
 
         public DataTable listaPermissoes()
@@ -73,7 +85,7 @@ namespace versami_desktop.Controllers
 
             }catch(Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL: " + e.Message);
+                Console.WriteLine("Erro na Consulta SQL Lista de Permissoes: " + e.Message);
             }
 
             return dt;
@@ -90,9 +102,50 @@ namespace versami_desktop.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL: " + e.Message);
+                Console.WriteLine("Erro na Consulta SQL Lista de Perguntas: " + e.Message);
             }
             return dt;
+        }
+
+        public DataTable buscaUsuario(string usuario)
+        {
+            string sql = "SELECT a.resposta, p.pergunta " +
+                " FROM tblAdmin AS a JOIN tblPerguntaSecreta AS p " +
+                "ON a.pergunta = p.idPergunta " +
+                "WHERE a.arroba_usuario=@user";
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql);
+                cmd.Parameters.AddWithValue("@user", usuario);
+                con = new Conexao();
+                dt = con.queryComParametros(cmd);
+            }catch(Exception e)
+            {
+                Console.WriteLine("Erro na Consulta SQL - Busca Usuário: " + e.Message);
+            }
+            return dt;
+        }
+
+        public bool alteraSenha(Admin adm)
+        {
+            bool resultado = false;
+            string sql = "UPDATE tblAdmin SET senha=@senha WHERE arroba_usuario=@user";
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql);
+                cmd.Parameters.AddWithValue("@senha", adm.getSenha());
+                cmd.Parameters.AddWithValue("@user", adm.getArroba());
+                con = new Conexao();
+
+                resultado = con.updateComParametros(cmd) > 0;
+            }catch(Exception e)
+            {
+                Console.WriteLine("Erro no Update - Altera Senha: " + e.Message);
+            }
+
+            return resultado;
         }
 
         public String getHash(String input)
