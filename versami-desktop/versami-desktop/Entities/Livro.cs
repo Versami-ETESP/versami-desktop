@@ -11,8 +11,22 @@ namespace versami_desktop.Entities
         private static int bookID;
         private static String titleBook, summaryBook;
         private byte[] cover;
-        private Genero genre;
-        private Autor autor;
+        private string genre;
+        private string autor;
+
+        public Livro()
+        {
+
+        }
+
+        public Livro (string title, string summary, byte[] cover, string genre, string autor)
+        {
+            titleBook = title;
+            summaryBook = summary;
+            this.cover = cover;
+            this.genre = genre;
+            this.autor = autor;
+        }
 
         public int getBookID()
         {
@@ -54,22 +68,22 @@ namespace versami_desktop.Entities
             this.cover = cover;
         }
 
-        public Genero getGenre()
+        public string getGenre()
         {
             return genre;
         }
 
-        public void setGenre(Genero genre)
+        public void setGenre(string genre)
         {
             this.genre = genre;
         }
 
-        public Autor getAutor()
+        public string getAutor()
         {
             return autor;
         }
 
-        public void setAutor(Autor autor)
+        public void setAutor(string autor)
         {
             this.autor = autor;
         }
