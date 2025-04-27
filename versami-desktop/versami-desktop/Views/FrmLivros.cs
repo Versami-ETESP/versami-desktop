@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using versami_desktop.Controllers;
 using versami_desktop.Entities;
 using versami_desktop.Util;
 
@@ -18,6 +19,7 @@ namespace versami_desktop.Views
         DataTable dt;
         Autor autor = new Autor();
         Genero genero = new Genero();
+        LivroController lc = new LivroController();
         public FrmLivros()
         {
             InitializeComponent();
@@ -94,27 +96,23 @@ namespace versami_desktop.Views
             if(e.RowIndex > -1)
             {
                 string id = gridLivros.Rows[e.RowIndex].Cells[0].Value.ToString();
-                txtIdLivro.Text = id;
+                dt = lc.obtemLivroGrid(id);
+
+                txtIdLivro.Text = dt.Rows[0]["idLivro"].ToString();
+                txtNomeLivro.Text = dt.Rows[0]["nomeLivro"].ToString();
+                txtDescLivros.Text = dt.Rows[0]["descLivro"].ToString();
+                txtAutor.Text = dt.Rows[0]["nomeAutor"].ToString();
+                txtGenero.Text = dt.Rows[0]["nomeGenero"].ToString();
 
                 try
                 {
-                    con = new Conexao();
-                    dt = con.executarSQL("SELECT * FROM tblLivro WHERE idLivro=" + id);
-
-                    string idAutor = dt.Rows[0]["idAutor"].ToString(), idGenero = dt.Rows[0]["idGenero"].ToString();
-
-                    txtNomeLivro.Text = dt.Rows[0]["nomeLivro"].ToString();
-                    txtDescLivros.Text = dt.Rows[0]["descLivro"].ToString();
-
-                    dt = con.executarSQL("SELECT nomeAutor FROM tblAutor WHERE idAutor=" + idAutor);
-                    txtAutor.Text = dt.Rows[0]["nomeAutor"].ToString();
-
-                    dt = con.executarSQL("SELECT nomeGenero FROM tblGenero WHERE idGenero=" + idGenero);
-                    txtGenero.Text = dt.Rows[0]["nomeGenero"].ToString();
-                }
-                catch(Exception ex)
+                    byte[] imgArray= (byte[]) dt.Rows[0]["imgCapa"];
+                    Image imgCapa = UtilitarioImagens.ConverteByteParaImagem(imgArray);
+                    pbCapa.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pbCapa.Image = imgCapa;
+                }catch(Exception ex)
                 {
-                    Console.WriteLine("Erro Consulta SQL: " + ex.Message);
+                    Console.WriteLine("Erro ao converter Imagem: " + ex.Message);
                 }
             }
         }

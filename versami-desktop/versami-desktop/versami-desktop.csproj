@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AcessoController.cs" />
+    <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Autor.cs" />
     <Compile Include="Entities\Genero.cs" />
@@ -57,6 +58,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Util\Conexao.cs" />
+    <Compile Include="Util\UtilitarioImagens.cs" />
     <Compile Include="Util\ValidaDados.cs" />
     <Compile Include="Views\FrmAlteraSenha.cs">
       <SubType>Form</SubType>

@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmlivros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmlivros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmalterasenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmalterasenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmlivros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmlivros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmalterasenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmalterasenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\util\\utilitarioimagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\util\\utilitarioimagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,82 +34,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmAlteraSenha.cs",
-              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmAlteraSenha.cs",
-              "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmAlteraSenha.cs",
-              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmAlteraSenha.cs",
-              "RelativeToolTip": "versami-desktop\\Views\\FrmAlteraSenha.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAiwDQAAABhAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UtilitarioImagens.cs",
+              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Util\\UtilitarioImagens.cs",
+              "RelativeDocumentMoniker": "versami-desktop\\Util\\UtilitarioImagens.cs",
+              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Util\\UtilitarioImagens.cs",
+              "RelativeToolTip": "versami-desktop\\Util\\UtilitarioImagens.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T22:04:44.018Z",
+              "WhenOpened": "2025-04-27T02:56:42.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmAlteraSenha.cs [Design]",
-              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmAlteraSenha.cs",
-              "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmAlteraSenha.cs",
-              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmAlteraSenha.cs [Design]",
-              "RelativeToolTip": "versami-desktop\\Views\\FrmAlteraSenha.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "LivroController.cs",
+              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\LivroController.cs",
+              "RelativeDocumentMoniker": "versami-desktop\\Controllers\\LivroController.cs",
+              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\LivroController.cs",
+              "RelativeToolTip": "versami-desktop\\Controllers\\LivroController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T21:50:28.592Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\frmLogin.cs",
-              "RelativeDocumentMoniker": "versami-desktop\\Views\\frmLogin.cs",
-              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\frmLogin.cs",
-              "RelativeToolTip": "versami-desktop\\Views\\frmLogin.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwDoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T18:54:24.55Z",
+              "WhenOpened": "2025-04-27T02:20:01.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\frmLogin.cs",
-              "RelativeDocumentMoniker": "versami-desktop\\Views\\frmLogin.cs",
-              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\frmLogin.cs [Design]",
-              "RelativeToolTip": "versami-desktop\\Views\\frmLogin.cs [Design]",
+              "Title": "FrmLivros.cs",
+              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmLivros.cs",
+              "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmLivros.cs",
+              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmLivros.cs",
+              "RelativeToolTip": "versami-desktop\\Views\\FrmLivros.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwGwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T18:54:22.364Z",
+              "WhenOpened": "2025-04-27T02:17:22.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmLivros.cs [Design]",
+              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmLivros.cs",
+              "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmLivros.cs",
+              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmLivros.cs [Design]",
+              "RelativeToolTip": "versami-desktop\\Views\\FrmLivros.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T02:17:19.901Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AcessoController.cs",
-              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\AcessoController.cs",
-              "RelativeDocumentMoniker": "versami-desktop\\Controllers\\AcessoController.cs",
-              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\AcessoController.cs",
-              "RelativeToolTip": "versami-desktop\\Controllers\\AcessoController.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAADwv44AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T17:54:48.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\Form1.cs",
               "RelativeDocumentMoniker": "versami-desktop\\Views\\Form1.cs",
               "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\Form1.cs",
               "RelativeToolTip": "versami-desktop\\Views\\Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAgwDsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T16:36:40.52Z"
+              "WhenOpened": "2025-04-05T16:36:40.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -124,7 +109,8 @@
               "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\Form1.cs [Design]",
               "RelativeToolTip": "versami-desktop\\Views\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T14:23:52.093Z"
+              "WhenOpened": "2025-04-05T14:23:52.093Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

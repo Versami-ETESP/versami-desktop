@@ -41,7 +41,7 @@
             this.btnBuscarAutor = new System.Windows.Forms.Button();
             this.txtDescLivros = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbCapa = new System.Windows.Forms.PictureBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtAutor = new System.Windows.Forms.TextBox();
@@ -54,7 +54,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridLivros)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCapa)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,7 +99,7 @@
             this.panel2.Controls.Add(this.btnBuscarAutor);
             this.panel2.Controls.Add(this.txtDescLivros);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pbCapa);
             this.panel2.Controls.Add(this.txtGenero);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.txtAutor);
@@ -197,6 +197,7 @@
             this.btnBuscarGenero.TabIndex = 14;
             this.btnBuscarGenero.Text = "Buscar";
             this.btnBuscarGenero.UseVisualStyleBackColor = false;
+            this.btnBuscarGenero.Click += new System.EventHandler(this.btnBuscarGenero_Click);
             // 
             // btnBuscarAutor
             // 
@@ -211,6 +212,7 @@
             this.btnBuscarAutor.TabIndex = 13;
             this.btnBuscarAutor.Text = "Buscar";
             this.btnBuscarAutor.UseVisualStyleBackColor = false;
+            this.btnBuscarAutor.Click += new System.EventHandler(this.btnBuscarAutor_Click);
             // 
             // txtDescLivros
             // 
@@ -232,14 +234,14 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Capa";
             // 
-            // pictureBox1
+            // pbCapa
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Silver;
-            this.pictureBox1.Location = new System.Drawing.Point(414, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 187);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.pbCapa.BackColor = System.Drawing.Color.Silver;
+            this.pbCapa.Location = new System.Drawing.Point(414, 64);
+            this.pbCapa.Name = "pbCapa";
+            this.pbCapa.Size = new System.Drawing.Size(134, 187);
+            this.pbCapa.TabIndex = 10;
+            this.pbCapa.TabStop = false;
             // 
             // txtGenero
             // 
@@ -344,7 +346,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridLivros)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCapa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,7 +366,7 @@
         private System.Windows.Forms.Button btnBuscarAutor;
         private System.Windows.Forms.RichTextBox txtDescLivros;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbCapa;
         private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtAutor;
