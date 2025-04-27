@@ -64,6 +64,21 @@ namespace versami_desktop.Util
             }
         }
 
+        public DataTable queryComParametros(SqlCommand comando)
+        {
+            DataTable dt = null;
+            try
+            {
+                comando.Connection = conectar();
+                SqlDataReader dr = comando.ExecuteReader();
+                dt = new DataTable();
+                dt.Load(dr); //converte DataReader em DataTable
+            }
+            catch (Exception) { }
+            desconectar();
+            return dt;
+        }
+
         public bool manutencaoDB(String comando_sql) //incluir, alterar, excluir
         {
             try
@@ -85,7 +100,7 @@ namespace versami_desktop.Util
             }
         }//fim do método manutençãoDB
 
-        public int manutencaoDB_Parametros(SqlCommand comando) //incluir, alterar, excluir com parâmetros
+        public int updateComParametros(SqlCommand comando) //incluir, alterar, excluir com parâmetros
         {
             int retorno = 0;
             try

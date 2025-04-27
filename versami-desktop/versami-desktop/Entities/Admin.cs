@@ -10,7 +10,8 @@ namespace versami_desktop.Entities
     {
         private static string nome, arroba;
         private static int idAdm, permissao;
-        private string email, senha;
+        private string email, senha, resposta;
+        private int idPergunta;
         private DateTime nasc;
 
         public Admin()
@@ -26,6 +27,26 @@ namespace versami_desktop.Entities
             setEmail(email);
             setSenha(senha);
             setNasc(nasc);
+        }
+
+        public string getResposta()
+        {
+            return resposta;
+        }
+
+        public void setResposta(string resp)
+        {
+            resposta = resp;
+        }
+
+        public int getIdPergunta()
+        {
+            return idPergunta;
+        }
+
+        public void setIdPergunta(int id)
+        {
+            idPergunta = id;
         }
 
         public string getNome()

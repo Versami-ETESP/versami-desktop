@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AcessoController.cs" />
+    <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Autor.cs" />
     <Compile Include="Entities\Genero.cs" />
@@ -57,7 +58,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Util\Conexao.cs" />
+    <Compile Include="Util\UtilitarioImagens.cs" />
     <Compile Include="Util\ValidaDados.cs" />
+    <Compile Include="Views\FrmAlteraSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmAlteraSenha.Designer.cs">
+      <DependentUpon>FrmAlteraSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmBugs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +83,12 @@
     </Compile>
     <Compile Include="Views\FrmBuscaGenero.Designer.cs">
       <DependentUpon>FrmBuscaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmBuscaLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmBuscaLivro.Designer.cs">
+      <DependentUpon>FrmBuscaLivro.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmCadastro.cs">
       <SubType>Form</SubType>
@@ -134,6 +148,9 @@
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmAlteraSenha.resx">
+      <DependentUpon>FrmAlteraSenha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmBlog.resx">
       <DependentUpon>FrmBlog.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmBuscaGenero.resx">
       <DependentUpon>FrmBuscaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmBuscaLivro.resx">
+      <DependentUpon>FrmBuscaLivro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>

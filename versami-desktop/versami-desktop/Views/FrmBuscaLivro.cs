@@ -9,15 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using versami_desktop.Controllers;
 using versami_desktop.Entities;
-using versami_desktop.Util;
 
 namespace versami_desktop.Views
 {
-    public partial class FrmBuscaAutor: Form
+    public partial class FrmBuscaLivro: Form
     {
-        Autor aut = new Autor();
+        Livro livro = new Livro();
         LivroController lc = new LivroController();
-        public FrmBuscaAutor()
+        public FrmBuscaLivro()
         {
             InitializeComponent();
         }
@@ -43,7 +42,7 @@ namespace versami_desktop.Views
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             //altera o nome das colunas
             dataGridView1.Columns[0].HeaderText = "ID";
-            dataGridView1.Columns[1].HeaderText = "NOME AUTOR";
+            dataGridView1.Columns[1].HeaderText = "NOME DO LIVRO";
             //altera o tamanho das colunas
             dataGridView1.Columns[0].Width = 30;
             dataGridView1.Columns[1].Width = 210;
@@ -57,16 +56,15 @@ namespace versami_desktop.Views
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = lc.buscaAutor(txtNome.Text);
+            dataGridView1.DataSource = lc.buscaLivro(txtNome.Text);
             formataGrid();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex > -1)
+            if (e.RowIndex > -1)
             {
-                aut.setAutorID(Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));
-                aut.setName(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
+                livro.setBookID(Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString()));           
                 DialogResult = DialogResult.OK;
                 this.Close();
             }

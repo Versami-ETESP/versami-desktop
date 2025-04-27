@@ -71,52 +71,54 @@ namespace versami_desktop.Views
 
         private void button2_Click(object sender, EventArgs e)
         {
-            bool notPermission = !rdoBanir.Checked && !rdoEditLivro.Checked && !rdoMaster.Checked && !rdoModerador.Checked && !rdoModerador.Checked;
+            if (ValidaDados.nameIsValid(txtNome.Text)
+                && ValidaDados.emailIsvalid(txtEmail.Text)
+                && ValidaDados.passIsValid(txtSenha.Text)
+                && ValidaDados.confirmIsValid(txtSenha.Text, txtConfirma.Text)
+                && ValidaDados.birthIsValid(dateBirth.Value)
+                && ValidaDados.userExist(txtArroba.Text)
+                && !string.IsNullOrEmpty(txtResposta.Text))
+            {
+                int numPermissao = Convert.ToInt32(cbPermissao.SelectedValue), idPergunta = Convert.ToInt32(cbPergunta.SelectedValue);
+                string senhaHash = cd.getHash(txtSenha.Text), respostaHash = cd.getHash(txtResposta.Text.ToUpper().Trim());
 
-            if (notPermission)
-            {
-                lblMensagem.Text = "Selecione o tipo de permissão";
-            }
-            else
-            {
-                if (!ValidaDados.nameIsValid(txtNome.Text)
-                || !ValidaDados.emailIsvalid(txtEmail.Text)
-                || !ValidaDados.passIsValid(txtSenha.Text)
-                || !ValidaDados.confirmIsValid(txtSenha.Text, txtConfirma.Text)
-                || !ValidaDados.birthIsValid(dateBirth.Value)
-                || !ValidaDados.userExist(txtArroba.Text))
+                Admin adm = new Admin(txtNome.Text, txtArroba.Text, numPermissao, txtEmail.Text, senhaHash, dateBirth.Value);
+                adm.setIdPergunta(idPergunta);
+                adm.setResposta(respostaHash);
+
+                if (cd.cadastrar(adm))
                 {
-                    lblMensagem.Text = "Por favor, preencha os campos corretamente";
+                    MessageBox.Show("Administrador cadastrado!");
+                    this.Close();
                 }
                 else
                 {
-                    int numPermissao = 0;
-                    if (rdoMaster.Checked)
-                        numPermissao = 1;
-                    else if (rdoEditLivro.Checked)
-                        numPermissao = 2;
-                    else if (rdoModerador.Checked)
-                        numPermissao = 3;
-                    else if (rdoBanir.Checked)
-                        numPermissao = 4;
-                    else if (rdoPublicar.Checked)
-                        numPermissao = 5;
-
-                    Admin adm = new Admin(txtNome.Text, txtArroba.Text, numPermissao, txtEmail.Text, txtSenha.Text, dateBirth.Value);
-
-
-                    if (cd.cadastrar(adm))
-                    {
-                        MessageBox.Show("Administrador cadastrado!");
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Administrador não cadastrado. Tente novamente mais tarde!");
-                    }
-                    
+                    MessageBox.Show("Administrador não cadastrado. Tente novamente mais tarde!");
                 }
             }
+            else
+            {
+                lblMensagem.Text = "Por favor, preencha os campos corretamente";
+            }
+
         }
+
+        private void FrmCadastro_Load(object sender, EventArgs e)
+        {
+            // popula o combo box de permissao
+            cbPermissao.Items.Clear();
+            cbPermissao.DataSource = cd.listaPermissoes();
+            cbPermissao.DisplayMember = "descricao";
+            cbPermissao.ValueMember = "idPermissao";
+            cbPermissao.SelectedIndex = 1;
+
+            // popula o combo box de perguntas secretas
+
+            cbPergunta.Items.Clear();
+            cbPergunta.DataSource = cd.listaPerguntas();
+            cbPergunta.ValueMember = "idPergunta";
+            cbPergunta.DisplayMember = "pergunta";
+        }
+
     }
 }

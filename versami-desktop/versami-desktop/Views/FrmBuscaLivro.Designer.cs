@@ -1,6 +1,6 @@
 ﻿namespace versami_desktop.Views
 {
-    partial class FrmBuscaGenero
+    partial class FrmBuscaLivro
     {
         /// <summary>
         /// Required designer variable.
@@ -73,11 +73,11 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 13);
+            this.label1.Size = new System.Drawing.Size(131, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Digite o genêro do livro";
+            this.label1.Text = "Digite o nome do livro";
             // 
-            // FrmBuscaGenero
+            // FrmBuscaLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,10 +87,10 @@
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
-            this.Name = "FrmBuscaGenero";
+            this.Name = "FrmBuscaLivro";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Pesquisar Gênero Literário";
+            this.Text = "Buscar Livro";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
