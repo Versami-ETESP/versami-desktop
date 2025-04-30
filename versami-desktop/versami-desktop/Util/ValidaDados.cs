@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,7 +53,7 @@ namespace versami_desktop.Util
                 
             }catch(Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL: " + e.Message);
+                Debug.WriteLine("Erro na Consulta SQL: " + e.Message);
                 return false;
             }
 

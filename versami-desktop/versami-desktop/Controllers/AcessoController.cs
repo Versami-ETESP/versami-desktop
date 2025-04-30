@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,7 @@ namespace versami_desktop.Controllers
 
             }catch(Exception e)
             {
-                Console.WriteLine("Erro na consulta SQL Login: "+ e.Message);
+                Debug.WriteLine("Erro na consulta SQL Login: "+ e.Message);
             }
 
             return hash;
@@ -69,7 +70,7 @@ namespace versami_desktop.Controllers
 
             }catch(Exception e)
             {
-                Console.WriteLine("Erro no Insert SQL Cadastro: " + e.Message);
+                Debug.WriteLine("Erro no Insert SQL Cadastro: " + e.Message);
             }
 
             return resultado;
@@ -85,7 +86,7 @@ namespace versami_desktop.Controllers
 
             }catch(Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL Lista de Permissoes: " + e.Message);
+                Debug.WriteLine("Erro na Consulta SQL Lista de Permissoes: " + e.Message);
             }
 
             return dt;
@@ -102,7 +103,7 @@ namespace versami_desktop.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL Lista de Perguntas: " + e.Message);
+                Debug.WriteLine("Erro na Consulta SQL Lista de Perguntas: " + e.Message);
             }
             return dt;
         }
@@ -122,7 +123,7 @@ namespace versami_desktop.Controllers
                 dt = con.queryComParametros(cmd);
             }catch(Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL - Busca Usuário: " + e.Message);
+                Debug.WriteLine("Erro na Consulta SQL - Busca Usuário: " + e.Message);
             }
             return dt;
         }
@@ -142,7 +143,7 @@ namespace versami_desktop.Controllers
                 resultado = con.updateComParametros(cmd) > 0;
             }catch(Exception e)
             {
-                Console.WriteLine("Erro no Update - Altera Senha: " + e.Message);
+                Debug.WriteLine("Erro no Update - Altera Senha: " + e.Message);
             }
 
             return resultado;

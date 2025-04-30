@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -41,7 +42,7 @@ namespace versami_desktop.Views
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro Consulta SQL: " + e.Message);
+                Debug.WriteLine("Erro Consulta SQL: " + e.Message);
             }
 
             return total;
@@ -59,7 +60,7 @@ namespace versami_desktop.Views
                 resultado = dt.Rows[0][0].ToString();
             }catch(Exception e)
             {
-                Console.WriteLine("Erro Consulta SQL: " + e.Message);
+                Debug.WriteLine("Erro Consulta SQL: " + e.Message);
             }
             return resultado;
         }

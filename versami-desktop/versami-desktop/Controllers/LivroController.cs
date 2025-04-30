@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,7 +32,7 @@ namespace versami_desktop.Controllers
                 dt = con.queryComParametros(cmd);
             }catch(Exception e)
             {
-                Console.WriteLine("Erro Na Consulta - Obter Livros: " + e.Message);
+                Debug.WriteLine("Erro Na Consulta - Obter Livros: " + e.Message);
             }
 
             return dt;
@@ -57,7 +58,7 @@ namespace versami_desktop.Controllers
                 result = con.updateComParametros(cmd) > 0;
             }catch(Exception e)
             {
-                Console.WriteLine("Erro no Insert - Cadastrar Livro: " + e.Message);
+                Debug.WriteLine("Erro no Insert - Cadastrar Livro: " + e.Message);
             }
             return result;
         }
@@ -74,7 +75,7 @@ namespace versami_desktop.Controllers
                 con.updateComParametros(cmd);
             }catch(Exception e)
             {
-                Console.WriteLine("Erro no Delete - Deletar Livro: " + e.Message);
+                Debug.WriteLine("Erro no Delete - Deletar Livro: " + e.Message);
             }
         }
 
@@ -114,7 +115,7 @@ namespace versami_desktop.Controllers
                 con.updateComParametros(cmd);
             }catch(Exception e)
             {
-                Console.WriteLine("Erro no Update - Atualizar Livro: " + e.Message);
+                Debug.WriteLine("Erro no Update - Atualizar Livro: " + e.Message);
             }
         }
 
@@ -128,7 +129,7 @@ namespace versami_desktop.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine("Erro Consulta SQL: " + e.Message);
+                Debug.WriteLine("Erro Consulta SQL: " + e.Message);
             }
 
             return dt;
@@ -146,7 +147,7 @@ namespace versami_desktop.Controllers
                 dt = con.queryComParametros(cmd);
             }catch(Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL - Busca Genero: " + e.Message);
+                Debug.WriteLine("Erro na Consulta SQL - Busca Genero: " + e.Message);
             }
             return dt;
         }
@@ -163,7 +164,7 @@ namespace versami_desktop.Controllers
                 dt = con.queryComParametros(cmd);
             }catch(Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL - Busca Genero: " + e.Message);
+                Debug.WriteLine("Erro na Consulta SQL - Busca Genero: " + e.Message);
             }
             return dt;
         }
@@ -181,7 +182,7 @@ namespace versami_desktop.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine("Erro na Consulta SQL - Busca Livro: " + e.Message);
+                Debug.WriteLine("Erro na Consulta SQL - Busca Livro: " + e.Message);
             }
             return dt;
         }

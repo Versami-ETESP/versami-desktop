@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -113,7 +114,7 @@ namespace versami_desktop.Views
                     pbCapa.Image = imgCapa;
                 }catch(Exception ex)
                 {
-                    Console.WriteLine("Erro ao converter Imagem: " + ex.Message);
+                    Debug.WriteLine("Erro ao converter Imagem: " + ex.Message);
                 }
             }
         }
@@ -283,7 +284,7 @@ namespace versami_desktop.Views
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Erro ao converter Imagem: " + ex.Message);
+                    Debug.WriteLine("Erro ao converter Imagem: " + ex.Message);
                 }
 
             }
