@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|c:\\users\\vera\\desktop\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frmposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frmposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmPosts.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmPosts.cs",
+              "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmPosts.cs",
+              "ToolTip": "C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmPosts.cs [Design]",
+              "RelativeToolTip": "versami-desktop\\Views\\FrmPosts.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T14:22:28.638Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmPosts.cs",
+              "DocumentMoniker": "C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmPosts.cs",
+              "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmPosts.cs",
+              "ToolTip": "C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmPosts.cs",
+              "RelativeToolTip": "versami-desktop\\Views\\FrmPosts.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAADwv5sAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T14:04:56.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "versami-desktop\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\Vera\\Desktop\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\PostController.cs",
+              "RelativeToolTip": "versami-desktop\\Controllers\\PostController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwDMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T14:45:47.197Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
