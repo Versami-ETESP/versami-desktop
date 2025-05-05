@@ -20,3 +20,25 @@ D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaGenero.resources
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmAlteraSenha.resources
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaLivro.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe.config
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.pdb
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.AssemblyReference.cache
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Properties.Resources.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.FrmPrincipal.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmAlteraSenha.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBlog.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBugs.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaAutor.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaGenero.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaLivro.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmCadastro.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmInicio.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmLivros.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.frmLogin.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmPosts.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmUsuarios.resources
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.GenerateResource.cache
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
+C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
