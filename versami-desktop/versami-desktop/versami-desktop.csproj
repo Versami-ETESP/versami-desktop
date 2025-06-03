@@ -68,12 +68,6 @@
     <Compile Include="Views\FrmAlteraSenha.Designer.cs">
       <DependentUpon>FrmAlteraSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmBugs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmBugs.Designer.cs">
-      <DependentUpon>FrmBugs.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\FrmBuscaAutor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,9 +150,6 @@
     <EmbeddedResource Include="Views\FrmBlog.resx">
       <DependentUpon>FrmBlog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmBugs.resx">
-      <DependentUpon>FrmBugs.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmBuscaAutor.resx">
       <DependentUpon>FrmBuscaAutor.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +216,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Grupo Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_add_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_48dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

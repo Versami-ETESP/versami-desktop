@@ -65,7 +65,7 @@ namespace versami_desktop
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             activeButton(btnUsuarios);
-            formShow(new FrmUsuarios());
+            formShow(new FrmCadastro());
         }
 
         private void btnLivros_Click(object sender, EventArgs e)
@@ -91,12 +91,7 @@ namespace versami_desktop
             Application.Exit();
         }
 
-        private void btnBugs_Click(object sender, EventArgs e)
-        {
-            activeButton(btnBugs);
-            formShow(new FrmBugs());
-        }
-
+    
         public string tipoAdmin(int permissao)
         {
             switch (permissao)
