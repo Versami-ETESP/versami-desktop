@@ -48,12 +48,14 @@
   <ItemGroup>
     <Compile Include="Controllers\AcessoController.cs" />
     <Compile Include="Controllers\LivroController.cs" />
-    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Controllers\DenunciaController.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Autor.cs" />
+    <Compile Include="Entities\Denuncia.cs" />
     <Compile Include="Entities\Genero.cs" />
     <Compile Include="Entities\Livro.cs" />
     <Compile Include="Entities\Posts.cs" />
+    <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

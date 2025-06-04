@@ -11,16 +11,16 @@ namespace versami_desktop.Entities
         private int idPublicacao;
         private string conteudo;
         private DateTime dataPublic;
-        private string nomeUsuario;
+        private Usuario user;
 
         public Post() { }
 
-        public Post(int id, string conteudo, DateTime data, string nomeUsuario)
+        public Post(int id, string conteudo, DateTime data, Usuario usuario)
         {
             this.idPublicacao = id;
             this.conteudo = conteudo;
             this.dataPublic = data;
-            this.nomeUsuario = nomeUsuario;
+            this.user = usuario;
         }
 
         public int getIdPublicacao() => idPublicacao;
@@ -32,8 +32,9 @@ namespace versami_desktop.Entities
         public DateTime getDataPublic() => dataPublic;
         public void setDataPublic(DateTime data) => dataPublic = data;
 
-        public string getNomeUsuario() => nomeUsuario;
-        public void setNomeUsuario(string nome) => nomeUsuario = nome;
+        public Usuario GetUsuario() => user;
+        public void setUsuario(Usuario usuario) => user = usuario;
+        
     }
 }
 
