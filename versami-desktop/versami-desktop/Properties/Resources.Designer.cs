@@ -193,6 +193,16 @@ namespace versami_desktop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap placeholder_user {
+            get {
+                object obj = ResourceManager.GetObject("placeholder_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap toolbar_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20 {
             get {
                 object obj = ResourceManager.GetObject("toolbar_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20", resourceCulture);

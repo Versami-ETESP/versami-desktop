@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panelDenuncia = new System.Windows.Forms.Panel();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnVisualizar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboSituacao = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtJustificativa = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gridDenuncias = new System.Windows.Forms.DataGridView();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtJustificativa = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboSituacao = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnVisualizar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
             this.panelDenuncia.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDenuncias)).BeginInit();
@@ -62,10 +62,97 @@
             this.panelDenuncia.Controls.Add(this.txtID);
             this.panelDenuncia.Enabled = false;
             this.panelDenuncia.Location = new System.Drawing.Point(87, 323);
-            this.panelDenuncia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelDenuncia.Margin = new System.Windows.Forms.Padding(2);
             this.panelDenuncia.Name = "panelDenuncia";
             this.panelDenuncia.Size = new System.Drawing.Size(773, 249);
             this.panelDenuncia.TabIndex = 0;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.Turquoise;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Location = new System.Drawing.Point(643, 198);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(102, 36);
+            this.btnSalvar.TabIndex = 7;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnVisualizar
+            // 
+            this.btnVisualizar.BackColor = System.Drawing.Color.Turquoise;
+            this.btnVisualizar.FlatAppearance.BorderSize = 0;
+            this.btnVisualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVisualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVisualizar.ForeColor = System.Drawing.Color.White;
+            this.btnVisualizar.Location = new System.Drawing.Point(421, 198);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(194, 36);
+            this.btnVisualizar.TabIndex = 6;
+            this.btnVisualizar.Text = "Visualizar Publicação";
+            this.btnVisualizar.UseVisualStyleBackColor = false;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(462, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 18);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Situação";
+            // 
+            // comboSituacao
+            // 
+            this.comboSituacao.FormattingEnabled = true;
+            this.comboSituacao.Location = new System.Drawing.Point(465, 114);
+            this.comboSituacao.Name = "comboSituacao";
+            this.comboSituacao.Size = new System.Drawing.Size(269, 21);
+            this.comboSituacao.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(44, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Justificativa";
+            // 
+            // txtJustificativa
+            // 
+            this.txtJustificativa.Location = new System.Drawing.Point(47, 114);
+            this.txtJustificativa.Name = "txtJustificativa";
+            this.txtJustificativa.Size = new System.Drawing.Size(350, 120);
+            this.txtJustificativa.TabIndex = 2;
+            this.txtJustificativa.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(44, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ID Publicação";
+            // 
+            // txtID
+            // 
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(47, 39);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(172, 20);
+            this.txtID.TabIndex = 0;
             // 
             // label2
             // 
@@ -95,91 +182,6 @@
             this.gridDenuncias.Size = new System.Drawing.Size(854, 204);
             this.gridDenuncias.TabIndex = 2;
             this.gridDenuncias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDenuncias_CellClick);
-            // 
-            // txtID
-            // 
-            this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(47, 39);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(172, 20);
-            this.txtID.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(44, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ID Publicação";
-            // 
-            // txtJustificativa
-            // 
-            this.txtJustificativa.Location = new System.Drawing.Point(47, 114);
-            this.txtJustificativa.Name = "txtJustificativa";
-            this.txtJustificativa.Size = new System.Drawing.Size(350, 120);
-            this.txtJustificativa.TabIndex = 2;
-            this.txtJustificativa.Text = "";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(44, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Justificativa";
-            // 
-            // comboSituacao
-            // 
-            this.comboSituacao.FormattingEnabled = true;
-            this.comboSituacao.Location = new System.Drawing.Point(465, 114);
-            this.comboSituacao.Name = "comboSituacao";
-            this.comboSituacao.Size = new System.Drawing.Size(269, 21);
-            this.comboSituacao.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(462, 88);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 18);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Situação";
-            // 
-            // btnVisualizar
-            // 
-            this.btnVisualizar.BackColor = System.Drawing.Color.Turquoise;
-            this.btnVisualizar.FlatAppearance.BorderSize = 0;
-            this.btnVisualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVisualizar.ForeColor = System.Drawing.Color.White;
-            this.btnVisualizar.Location = new System.Drawing.Point(421, 198);
-            this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(194, 36);
-            this.btnVisualizar.TabIndex = 6;
-            this.btnVisualizar.Text = "Visualizar Publicação";
-            this.btnVisualizar.UseVisualStyleBackColor = false;
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.Color.Turquoise;
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(643, 198);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(102, 36);
-            this.btnSalvar.TabIndex = 7;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = false;
             // 
             // FrmPosts
             // 

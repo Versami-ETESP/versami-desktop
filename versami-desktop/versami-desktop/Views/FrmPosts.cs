@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using versami_desktop.Controllers;
 using versami_desktop.Entities;
+using versami_desktop.Util;
 
 namespace versami_desktop.Views
 {
@@ -19,6 +20,7 @@ namespace versami_desktop.Views
         private Denuncia denuncia;
         private Usuario usuarioDenunciado;
         private Usuario usuarioDenunciante;
+        private bool postVisualizado = false;
 
         public FrmPosts()
         {
@@ -47,12 +49,49 @@ namespace versami_desktop.Views
 
                 this.publicacao = this.denuncia.GetPost();
                 this.usuarioDenunciante = this.denuncia.getUser();
-                this.usuarioDenunciado = this.publicacao.GetUsuario();
+                this.usuarioDenunciado = this.publicacao.getUsuario();
 
                 txtID.Text = this.publicacao.getIdPublicacao().ToString();
                 panelDenuncia.Visible = true;
                 panelDenuncia.Enabled = true;
                
+            }
+        }
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
+        {
+            if(this.publicacao == null)
+            {
+                MessageBox.Show("Selecione uma denúncia antes de visualizar publicação", "Selecione a denuncia", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+            CompartilhaDados.setPublicacao(this.publicacao);
+            FrmVisualizarPost vp = new FrmVisualizarPost();
+            this.postVisualizado = vp.ShowDialog() == DialogResult.OK;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            string justificativa = txtJustificativa.Text;
+
+            if (this.postVisualizado == false)
+            {
+                MessageBox.Show("É preciso visualizar a publicação antes de seguir com a ação", "Publicação não visualizada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if(Convert.ToInt32(comboSituacao.SelectedValue) == Denuncia.STATUS_PENDENTE)
+            {
+                MessageBox.Show("Não é possível tratar um denúncia com status pendente", "Status Pendente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+            if (string.IsNullOrEmpty(justificativa))
+            {
+                MessageBox.Show("Insira uma justificativa antes de salvar", "Justificativa em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
         }
     }

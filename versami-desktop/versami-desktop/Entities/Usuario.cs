@@ -10,6 +10,17 @@ namespace versami_desktop.Entities
     {
         private String userName, userLogin, userEmail, userPass;
         private int userID;
+        private byte[] userImage;
+
+        public void setUserImage(byte[] image)
+        {
+            this.userImage = image;
+        }
+
+        public byte[] getUserImage()
+        {
+            return this.userImage;
+        }
 
         public String getUserName()
         {

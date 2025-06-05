@@ -41,3 +41,4 @@ C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmVisualizarPost.resources

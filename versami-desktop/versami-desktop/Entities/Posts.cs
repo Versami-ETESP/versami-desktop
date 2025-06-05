@@ -12,6 +12,7 @@ namespace versami_desktop.Entities
         private string conteudo;
         private DateTime dataPublic;
         private Usuario user;
+        private Livro livro;
 
         public Post() { }
 
@@ -32,8 +33,11 @@ namespace versami_desktop.Entities
         public DateTime getDataPublic() => dataPublic;
         public void setDataPublic(DateTime data) => dataPublic = data;
 
-        public Usuario GetUsuario() => user;
+        public Usuario getUsuario() => user;
         public void setUsuario(Usuario usuario) => user = usuario;
+
+        public Livro getLivro() => livro;
+        public void setLivro(Livro liv) => livro = liv;
         
     }
 }

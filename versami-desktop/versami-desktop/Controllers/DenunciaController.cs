@@ -76,6 +76,54 @@ namespace versami_desktop.Controllers
 
         }
 
+        public Post obterPublicacao(int idPublic)
+        {
+            Debug.WriteLine("Valor do id: " + idPublic);
+            string sql = "SELECT p.idPublicacao, p.conteudo, p.dataPublic, u.fotoUsuario, u.nome, u.arroba_usuario, l.idLivro, l.nomeLivro, l.imgCapa " +
+                "FROM tblPublicacao p " +
+                "JOIN tblUsuario u ON p.idUsuario = u.idUsuario " +
+                "LEFT JOIN tblLivro l ON p.idLivro = l.idLivro " +
+                "WHERE p.idPublicacao = @id";
+            Post post = new Post();
+            try
+            {
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand(sql);
+                cmd.Parameters.AddWithValue("@id", idPublic);
+                this.dt = this.con.queryComParametros(cmd);
+                Usuario user = new Usuario();
+                if (this.dt == null || this.dt.Rows.Count == 0) {
+                    Debug.WriteLine("dt vazio");
+                    return null;
+                }
+
+                    
+                DataRow r = dt.Rows[0];
+
+                user.setUserName(r["nome"].ToString());
+                user.setUserLogin(r["arroba_usuario"].ToString());
+                if (!r.IsNull("fotoUsuario")) user.setUserImage((byte[])r["fotoUsuario"]);
+
+                post.setUsuario(user);
+                post.setIdPublicacao(Convert.ToInt32(r["idPublicacao"]));
+                post.setConteudo(r["conteudo"].ToString());
+                post.setDataPublic(Convert.ToDateTime(r["dataPublic"]));
+
+                if (!r.IsNull("idLivro"))
+                {
+                    Livro livro = new Livro();
+                    livro.setTitle(r["nomeLivro"].ToString());
+                    livro.setCover((byte[])r["imgCapa"]);
+                    post.setLivro(livro);
+                }
+            }catch(Exception e)
+            {
+                Debug.WriteLine("Erro ao consultar publicação: " + e.ToString());
+                throw;
+            }
+            return post;
+        }
+
         public DataTable listarStatusDenuncia()
         {
             string sql = "SELECT * FROM tblStatusDenuncia";
