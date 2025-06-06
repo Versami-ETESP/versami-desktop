@@ -89,7 +89,7 @@ namespace versami_desktop.Entities
             senha = usrSenha;
         }
         
-        private int getID()
+        public int getID()
         {
             return idAdm;
         }

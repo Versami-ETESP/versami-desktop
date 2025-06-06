@@ -38,10 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.gridDenuncias = new System.Windows.Forms.DataGridView();
             this.panelDenuncia.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDenuncias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,22 +155,13 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(42)))), ((int)(((byte)(65)))));
-            this.label2.Location = new System.Drawing.Point(31, 0);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(395, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 36);
             this.label2.TabIndex = 1;
             this.label2.Text = "Denúncias";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(77)))), ((int)(((byte)(108)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(355, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(215, 45);
-            this.panel1.TabIndex = 1;
             // 
             // gridDenuncias
             // 
@@ -189,8 +178,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(42)))), ((int)(((byte)(65)))));
             this.ClientSize = new System.Drawing.Size(948, 639);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.gridDenuncias);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelDenuncia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPosts";
@@ -198,7 +187,6 @@
             this.Load += new System.EventHandler(this.FrmPosts_Load);
             this.panelDenuncia.ResumeLayout(false);
             this.panelDenuncia.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridDenuncias)).EndInit();
             this.ResumeLayout(false);
 
@@ -208,7 +196,6 @@
 
         private System.Windows.Forms.Panel panelDenuncia;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView gridDenuncias;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnVisualizar;

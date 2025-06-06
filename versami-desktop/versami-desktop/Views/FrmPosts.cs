@@ -42,7 +42,9 @@ namespace versami_desktop.Views
         {
             if(e.RowIndex > -1)
             {
-                string idDenuncia = gridDenuncias.Rows[e.RowIndex].Cells[0].Value.ToString();
+                string idDenuncia = gridDenuncias.Rows[e.RowIndex].Cells[0].Value.ToString(); 
+                if (string.IsNullOrEmpty(idDenuncia) || idDenuncia.Equals("0")) return;
+
                 this.denuncia = dc.obterDenuncia(idDenuncia);
 
                 if (denuncia == null) return;
@@ -93,6 +95,37 @@ namespace versami_desktop.Views
                 MessageBox.Show("Insira uma justificativa antes de salvar", "Justificativa em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            if(MessageBox.Show("Deseja finalizar essa denúncia? ", "Finalizar Denúncia", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Admin adm = new Admin();
+                this.denuncia.setAdmin(adm);
+                this.denuncia.setObservacao(justificativa);
+                this.denuncia.setStatusDenuncia(Convert.ToInt32(comboSituacao.SelectedValue));
+
+                if (!dc.tratarDenuncia(this.denuncia))
+                {
+                    MessageBox.Show("Não foi possível finalizar essa denúncia. Tente mais tarde", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                gridDenuncias.DataSource = dc.listarDenunciasPendentes();
+                panelDenuncia.Visible = false;
+
+                switch (Convert.ToInt32(comboSituacao.SelectedValue))
+                {
+                    case Denuncia.STATUS_DEFERIDO:
+                        this.dc.excluirPost(this.publicacao.getIdPublicacao());
+                        //inserir notificacoes
+                        break;
+                    case Denuncia.STATUS_INDEFERIDO:
+                        //inserir notificacoes
+                        break;
+                }
+
+                this.denuncia = null;
+            }
+            
+
         }
     }
 

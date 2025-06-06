@@ -172,17 +172,44 @@ namespace versami_desktop.Controllers
 
             try
             {
-                con = new Conexao();
-                using (SqlCommand cmd = new SqlCommand(sql, con.conectar()))
-                {
-                    cmd.Parameters.AddWithValue("@id", idPublicacao);
-                    cmd.ExecuteNonQuery();
-                }
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand(sql);
+                cmd.Parameters.AddWithValue("@id", idPublicacao);
+                this.con.updateComParametros(cmd);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("Erro ao excluir post: " + ex.Message);
             }
+        }
+
+        public bool tratarDenuncia(Denuncia denuncia)
+        {
+            bool resposta = false;
+            string sql = "UPDATE tblDenuncia SET observacao_admin = @justificativa, idAdmin = @idAdmin, statusDenun = @status WHERE idDenuncia = @id";
+
+            if(denuncia == null)
+            {
+                Debug.WriteLine("Objeto Denuncia está nulo");
+                return resposta;
+            }
+
+            try
+            {
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand(sql);
+                cmd.Parameters.AddWithValue("@justificativa", denuncia.getObservacao());
+                cmd.Parameters.AddWithValue("@idAdmin", denuncia.GetAdmin().getID());
+                cmd.Parameters.AddWithValue("@status", denuncia.getStatusDenuncia());
+                cmd.Parameters.AddWithValue("@id", denuncia.getIdDenuncia());
+
+                resposta = this.con.updateComParametros(cmd) > 0;
+            }catch(Exception e)
+            {
+                Debug.WriteLine("Erro ao tratar denuncia: " + e.Message);
+            }
+
+            return resposta;
         }
     }
 }
