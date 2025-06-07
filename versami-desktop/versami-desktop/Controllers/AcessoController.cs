@@ -19,6 +19,7 @@ namespace versami_desktop.Controllers
 
         public bool logar(string login, string senha)
         {
+            Debug.WriteLine("Login: " + login + " Senha: " + senha);
             bool resultado = false;
 
             try
@@ -30,7 +31,8 @@ namespace versami_desktop.Controllers
                 cmd.Parameters.AddWithValue("@senha", senha);
 
                 this.dt = con.queryComParametros(cmd);
-
+                Debug.WriteLine("dt é nulo: " + this.dt == null);
+                Debug.WriteLine("dt linhas: " + this.dt.Rows.Count);
                 if(this.dt != null && this.dt.Rows.Count > 0)
                 {
                     Admin adm = new Admin();
@@ -44,6 +46,7 @@ namespace versami_desktop.Controllers
             {
                 Debug.WriteLine("Erro ao consultar Login: " + e.Message);
             }
+            if(!resultado) Debug.WriteLine("Não obteve retorno");
             return resultado;
         }
 
@@ -139,7 +142,6 @@ namespace versami_desktop.Controllers
                 cmd.Parameters.AddWithValue("@senha", adm.getSenha());
                 cmd.Parameters.AddWithValue("@user", adm.getArroba());
                 con = new Conexao();
-
                 resultado = con.updateComParametros(cmd) > 0;
             }catch(Exception e)
             {

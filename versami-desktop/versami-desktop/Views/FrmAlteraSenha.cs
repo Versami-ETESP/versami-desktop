@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -46,7 +47,6 @@ namespace versami_desktop.Views
         private void btnAltera_Click(object sender, EventArgs e)
         {
             string respostaForm = ac.getHash(txtResposta.Text.ToUpper().Trim()), senha = txtSenha.Text, confirma = txtConfirma.Text;
-
 
             if (resposta.Equals(respostaForm))
             {
