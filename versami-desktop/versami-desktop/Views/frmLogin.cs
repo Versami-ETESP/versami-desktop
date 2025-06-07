@@ -25,7 +25,7 @@ namespace versami_desktop.Views
         {
             string arroba = txtArroba.Text, senha = lc.getHash(txtSenha.Text);
 
-            if(senha.Equals(lc.logar(arroba)))
+            if(lc.logar(arroba, senha))
             {
                 correctLogin = true;
                 this.Close();

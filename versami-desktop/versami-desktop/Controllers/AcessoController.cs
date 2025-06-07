@@ -17,34 +17,34 @@ namespace versami_desktop.Controllers
         private Conexao con;
         private DataTable dt;
 
-        public string logar(string nome)
+        public bool logar(string login, string senha)
         {
-            string sql = "SELECT idAdmin, nome, arroba_usuario, permissao, senha FROM tblAdmin WHERE arroba_usuario=@arroba";
-            SqlCommand cmd = new SqlCommand(sql);
-            cmd.Parameters.AddWithValue("@arroba", nome);
-            string hash = "";
+            bool resultado = false;
 
             try
             {
-                con = new Conexao();
-                dt = con.queryComParametros(cmd);
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand("usp_loginAdministrador");
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@arroba", login);
+                cmd.Parameters.AddWithValue("@senha", senha);
 
-                if(dt != null && dt.Rows.Count > 0)
+                this.dt = con.queryComParametros(cmd);
+
+                if(this.dt != null && this.dt.Rows.Count > 0)
                 {
                     Admin adm = new Admin();
                     adm.setId(Convert.ToInt32(dt.Rows[0]["idAdmin"].ToString()));
                     adm.setArroba(dt.Rows[0]["arroba_usuario"].ToString());
                     adm.setNome(dt.Rows[0]["nome"].ToString());
                     adm.setPermissao(Convert.ToInt32(dt.Rows[0]["permissao"].ToString()));
-                    hash = dt.Rows[0]["senha"].ToString();
+                    resultado = true;
                 }
-
             }catch(Exception e)
             {
-                Debug.WriteLine("Erro na consulta SQL Login: "+ e.Message);
+                Debug.WriteLine("Erro ao consultar Login: " + e.Message);
             }
-
-            return hash;
+            return resultado;
         }
 
         public bool cadastrar(Admin adm)
