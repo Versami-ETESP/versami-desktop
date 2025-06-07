@@ -89,7 +89,6 @@ namespace versami_desktop.Views
                 if (cd.cadastrar(adm))
                 {
                     MessageBox.Show("Administrador cadastrado!");
-                    this.Close();
                 }
                 else
                 {
