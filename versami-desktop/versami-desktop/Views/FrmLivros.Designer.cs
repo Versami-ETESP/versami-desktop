@@ -43,6 +43,7 @@
             this.btnBuscarAutor = new System.Windows.Forms.Button();
             this.txtDescLivros = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pbCapa = new System.Windows.Forms.PictureBox();
             this.txtGenero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtAutor = new System.Windows.Forms.TextBox();
@@ -52,7 +53,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIdLivro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbCapa = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridLivros)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,7 +80,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(42)))), ((int)(((byte)(65)))));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(319, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 36);
@@ -278,12 +278,21 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Capa";
             // 
+            // pbCapa
+            // 
+            this.pbCapa.BackColor = System.Drawing.Color.Silver;
+            this.pbCapa.Location = new System.Drawing.Point(414, 64);
+            this.pbCapa.Name = "pbCapa";
+            this.pbCapa.Size = new System.Drawing.Size(134, 187);
+            this.pbCapa.TabIndex = 10;
+            this.pbCapa.TabStop = false;
+            // 
             // txtGenero
             // 
             this.txtGenero.Enabled = false;
             this.txtGenero.Location = new System.Drawing.Point(27, 213);
             this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(246, 20);
+            this.txtGenero.Size = new System.Drawing.Size(246, 22);
             this.txtGenero.TabIndex = 9;
             // 
             // label6
@@ -302,7 +311,7 @@
             this.txtAutor.Enabled = false;
             this.txtAutor.Location = new System.Drawing.Point(27, 164);
             this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(246, 20);
+            this.txtAutor.Size = new System.Drawing.Size(246, 22);
             this.txtAutor.TabIndex = 7;
             // 
             // label5
@@ -332,7 +341,7 @@
             this.txtNomeLivro.Enabled = false;
             this.txtNomeLivro.Location = new System.Drawing.Point(27, 112);
             this.txtNomeLivro.Name = "txtNomeLivro";
-            this.txtNomeLivro.Size = new System.Drawing.Size(246, 20);
+            this.txtNomeLivro.Size = new System.Drawing.Size(246, 22);
             this.txtNomeLivro.TabIndex = 3;
             // 
             // label3
@@ -351,7 +360,7 @@
             this.txtIdLivro.Enabled = false;
             this.txtIdLivro.Location = new System.Drawing.Point(27, 64);
             this.txtIdLivro.Name = "txtIdLivro";
-            this.txtIdLivro.Size = new System.Drawing.Size(246, 20);
+            this.txtIdLivro.Size = new System.Drawing.Size(246, 22);
             this.txtIdLivro.TabIndex = 1;
             // 
             // label2
@@ -364,15 +373,6 @@
             this.label2.Size = new System.Drawing.Size(21, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID";
-            // 
-            // pbCapa
-            // 
-            this.pbCapa.BackColor = System.Drawing.Color.Silver;
-            this.pbCapa.Location = new System.Drawing.Point(414, 64);
-            this.pbCapa.Name = "pbCapa";
-            this.pbCapa.Size = new System.Drawing.Size(134, 187);
-            this.pbCapa.TabIndex = 10;
-            this.pbCapa.TabStop = false;
             // 
             // FrmLivros
             // 

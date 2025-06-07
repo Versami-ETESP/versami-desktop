@@ -140,32 +140,6 @@ namespace versami_desktop.Controllers
             return this.dt;
         }
 
-        public DataTable listarPosts()
-        {
-            string sql = @"
-                SELECT 
-                    p.idPublicacao, 
-                    p.conteudo, 
-                    p.dataPublic, 
-                    u.nome,
-                    (SELECT COUNT(*) FROM tblLikesPorPost WHERE idPublicacao = p.idPublicacao) AS qtdCurtidas,
-                    (SELECT COUNT(*) FROM tblComentario WHERE idPublicacao = p.idPublicacao) AS qtdComentarios
-                FROM tblPublicacao AS p
-                JOIN tblUsuario AS u ON p.idUsuario = u.idUsuario
-                ORDER BY p.dataPublic DESC";
-
-            try
-            {
-                con = new Conexao();
-                dt = con.executarSQL(sql);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("Erro ao listar posts: " + ex.Message);
-            }
-
-            return dt;
-        }
         public void excluirPost(int idPublicacao)
         {
             string sql = "DELETE FROM tblPublicacao WHERE idPublicacao = @id";
@@ -210,6 +184,63 @@ namespace versami_desktop.Controllers
             }
 
             return resposta;
+        }
+
+        public void notificarTratamentoDenuncia(int tipoNotificacao, int statusDenuncia, Usuario user)
+        {
+            if(user == null || user.getUserID() == 0)
+            {
+                Debug.WriteLine("Objeto Usuário está nulo ou id é 0");
+                return;
+            }
+
+            if(tipoNotificacao != 5 && tipoNotificacao != 6)
+            {
+                Debug.WriteLine("Tipo de notificação inválida para o Desktop");
+                return;
+            }
+
+            string msg = string.Empty;
+
+            switch (tipoNotificacao)
+            {
+                case 5:
+                    if(statusDenuncia == Denuncia.STATUS_DEFERIDO)
+                    {
+                        msg = "A publicação indevida foi deletada. Obrigado pela sua contribução!";
+                    }else if(statusDenuncia == Denuncia.STATUS_INDEFERIDO)
+                    {
+                        msg = "A publicação não viola nossas diretrizes. Agradecemos pela sua contribução!";
+                    }
+                    break;
+                case 6:
+                    if(statusDenuncia == Denuncia.STATUS_DEFERIDO)
+                    {
+                        msg = "Sua publicação foi removida por violar nossas diretrizes.";
+                    }
+                    break;
+            }
+
+            if (string.IsNullOrEmpty(msg))
+            {
+                Debug.WriteLine("Mensagem de notificação não definida para os parâmetros informados.");
+                return;
+            }
+
+            try
+            {
+                string sql = "INSERT INTO tblNotificacao(mensagem,tipoNotificacao,idUsuario) VALUES (@msg,@tipo,@idUser)";
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand(sql);
+                cmd.Parameters.AddWithValue("@msg", msg);
+                cmd.Parameters.AddWithValue("@tipo", tipoNotificacao);
+                cmd.Parameters.AddWithValue("@idUser", user.getUserID());
+
+                this.con.updateComParametros(cmd);
+            }catch(Exception e)
+            {
+                Debug.WriteLine("Erro ao notificar usuario: " + e.Message);
+            }
         }
     }
 }
