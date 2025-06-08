@@ -147,9 +147,9 @@ namespace versami_desktop.Views
                         txtDescricaoPost.Text,
                         imgPost
                     );
-
+                    Admin adm = new Admin();
                     post.setDataPost(DateTime.Now);
-                    post.setIdAdmin(1); // Substitua por ID do admin logado, se tiver
+                    post.setIdAdmin(adm.getID()); // Substitua por ID do admin logado, se tiver
 
                     if (controller.insertPost(post))
                     {
@@ -208,24 +208,27 @@ namespace versami_desktop.Views
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            /*
-            FrmPesquisarBlog busca = new FrmPesquisarBlog();
+            FrmBuscaBlog busca = new FrmBuscaBlog();
 
-            if (busca.ShowDialog() == DialogResult.OK)
+            if(busca.ShowDialog() == DialogResult.OK)
             {
                 BlogController bc = new BlogController();
-                BlogPost post = bc.BuscarPorId(busca.IdSelecionado);
+                BlogPost bp = bc.BuscarPorId(CompartilhaDados.getBlog().getIdPost());
 
-                if (post != null)
+                if (bp != null)
                 {
-                    txtIdPost.Text = post.getIdPost().ToString();
-                    txtTituloPost.Text = post.getTitulo();
-                    txtDescricaoPost.Text = post.getConteudo();
-                    imgPost = post.getImagem();
-                    PictureBoxPost.Image = UtilitarioImagens.ConverteByteParaImagem(imgPost);
-                    PictureBoxPost.SizeMode = PictureBoxSizeMode.StretchImage;
+                    txtIdPost.Text = bp.getIdPost().ToString();
+                    txtTituloPost.Text = bp.getTitulo();
+                    txtDescricaoPost.Text = bp.getConteudo();
+                    imgPost = bp.getImagem();
+
+                    if(imgPost != null)
+                    {
+                        PictureBoxPost.Image = UtilitarioImagens.ConverteByteParaImagem(imgPost);
+                        PictureBoxPost.SizeMode = PictureBoxSizeMode.StretchImage;
+                    }
                 }
-            }*/
+            }
         }
 
         private void CarregarPostSelecionado(int id)

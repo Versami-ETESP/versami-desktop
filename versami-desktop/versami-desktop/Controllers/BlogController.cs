@@ -33,7 +33,6 @@ namespace versami_desktop.Controllers
             return dt;
         }
 
-        // Obter dados de um post específico
         public DataTable obtemPostGrid(string id)
         {
             string sql = "SELECT idBlogPost AS idPost, titulo, conteudo, imgPost AS imagem FROM tblBlogPost";
@@ -51,10 +50,6 @@ namespace versami_desktop.Controllers
             return dt;
         }
 
-
-        // Inserir um novo post
-
-
         public bool insertPost(BlogPost post)
         {
 
@@ -67,7 +62,7 @@ namespace versami_desktop.Controllers
 
             try
             {
-                con = new Conexao(); // Usa a conexão do seu próprio objeto
+                con = new Conexao(); 
                 SqlCommand cmd = new SqlCommand(sql);
                 cmd.Parameters.AddWithValue("@titulo", post.getTitulo());
                 cmd.Parameters.AddWithValue("@conteudo", post.getConteudo());
@@ -88,7 +83,7 @@ namespace versami_desktop.Controllers
 
             return result;
         }
-        // Deletar um post
+
         public void deletePost(string id)
         {
             string sql = "DELETE FROM tblBlogPost WHERE idBlogPost = @id";
@@ -106,7 +101,6 @@ namespace versami_desktop.Controllers
             }
         }
 
-        // Atualizar um post
         public void updatePost(Entities.BlogPost post)
         {
             string sql = "UPDATE tblBlogPost SET titulo = @titulo, conteudo = @conteudo, dataPost = @data WHERE idBlogPost = @id";
@@ -128,22 +122,17 @@ namespace versami_desktop.Controllers
             }
         }
 
-
-
         public DataTable BuscarPorTitulo(string titulo)
         {
             DataTable dt = new DataTable();
-            string sql = "SELECT idBlogPost, titulo, conteudo  FROM tblBlogPost WHERE titulo LIKE @titulo";
+            string sql = "SELECT idBlogPost, titulo  FROM tblBlogPost WHERE titulo LIKE @titulo";
 
             try
             {
                 con = new Conexao();
-                SqlConnection conexao = con.conectar();
-                SqlCommand cmd = new SqlCommand(sql, conexao);
+                SqlCommand cmd = new SqlCommand(sql);
                 cmd.Parameters.AddWithValue("@titulo", "%" + titulo.Trim() + "%");
-
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(dt);
+                dt = con.queryComParametros(cmd);
             }
             catch (Exception ex)
             {
