@@ -47,10 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AcessoController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="Controllers\DenunciaController.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Autor.cs" />
+    <Compile Include="Entities\BlogPost.cs" />
     <Compile Include="Entities\Denuncia.cs" />
     <Compile Include="Entities\Genero.cs" />
     <Compile Include="Entities\Livro.cs" />
