@@ -101,10 +101,26 @@ namespace versami_desktop.Controllers
             }
         }
 
-        public void updatePost(Entities.BlogPost post)
+        public bool updatePost(BlogPost post, int op)
         {
-            string sql = "UPDATE tblBlogPost SET titulo = @titulo, conteudo = @conteudo, dataPost = @data WHERE idBlogPost = @id";
+            if (op < 1 || op > 2)
+            {
+                Debug.WriteLine("Valor in´válido para as opcoes de update: " + op);
+                return false;
+            }
 
+            string sql = "";
+            var resp = false;
+            switch (op)
+            {
+                case 1:
+                    sql = "UPDATE tblBlogPost SET titulo = @titulo, conteudo = @conteudo, dataPost = @data WHERE idBlogPost = @id";
+                    break;
+                case 2:
+                    sql = "UPDATE tblBlogPost SET titulo = @titulo, conteudo = @conteudo, dataPost = @data, imgPost = @img WHERE idBlogPost = @id";
+                    break;
+            }
+                
             try
             {
                 SqlCommand cmd = new SqlCommand(sql);
@@ -113,13 +129,18 @@ namespace versami_desktop.Controllers
                 cmd.Parameters.AddWithValue("@data", post.getDataPost());
                 cmd.Parameters.AddWithValue("@id", post.getIdPost());
 
+                if (op == 2)
+                    cmd.Parameters.AddWithValue("@img", post.getImagem());
+
                 con = new Conexao();
-                con.updateComParametros(cmd);
+                resp = con.updateComParametros(cmd) > 0;
             }
             catch (Exception e)
             {
                 Debug.WriteLine("Erro no Update - Atualizar Post: " + e.Message);
             }
+
+            return resp;
         }
 
         public DataTable BuscarPorTitulo(string titulo)

@@ -82,8 +82,7 @@ namespace versami_desktop.Views
             txtDescricaoPost.Enabled = estado;
             btnImgPost.Enabled = estado;
             btnAdicionar.Enabled = estado;
-            btnEditar.Enabled = estado;
-            //btnBuscarLivro.Enabled = estado;
+            btnAtualizar.Enabled = estado;
         }
 
         private void limparCampos()
@@ -274,6 +273,45 @@ namespace versami_desktop.Views
             if (id > 0)
             {
                 CarregarPostSelecionado(id);
+            }
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtIdPost.Text))
+            {
+                MessageBox.Show("Selecione uma publicação antes de alterar","Selecionar Post",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if(string.IsNullOrEmpty(txtTituloPost.Text) || string.IsNullOrEmpty(txtDescricaoPost.Text))
+            {
+                MessageBox.Show("Os campos de título e conteúdo são obrigatórios", "Campos Vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            BlogController bc = new BlogController();
+            BlogPost blog = new BlogPost();
+            int op = this.imgPost == null ? 1 : 2;
+            blog.setTitulo(txtTituloPost.Text);
+            blog.setConteudo(txtDescricaoPost.Text);
+            blog.setIdPost(Convert.ToInt32(txtIdPost.Text));
+            blog.setDataPost(DateTime.Now);
+
+            if (this.imgPost != null)
+            {
+                blog.setImagem(this.imgPost);
+            }
+
+            if(bc.updatePost(blog, op))
+            {
+                MessageBox.Show("Post Atualizado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                limparCampos();
+                gridBlogPost.DataSource = bc.carregarGrid();
+            }
+            else
+            {
+                MessageBox.Show("Erro ao atualizar Post do Blog", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
