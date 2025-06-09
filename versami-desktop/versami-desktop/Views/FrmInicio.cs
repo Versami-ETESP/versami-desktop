@@ -25,10 +25,12 @@ namespace versami_desktop.Views
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
+            /*
             lblTotUsers.Text = contarInfos("SELECT COUNT(*) FROM tblUsuario");
             lblTotPost.Text = contarInfos("SELECT COUNT(*) FROM tblPublicacao");
             lblTotComentarios.Text = contarInfos("SELECT COUNT(*) FROM tblComentario");
             lblTopUser.Text = "@" + topUser();
+            */
         }
 
         private string contarInfos(string sql)

@@ -43,3 +43,5 @@ C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmVisualizarPost.resources
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaBlog.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\itextsharp.dll
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-.DA10B7C8.Up2Date
