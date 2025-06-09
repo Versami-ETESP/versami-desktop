@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.graficoUsuarios = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.graficoComentarios = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.graficoPublicacoes = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.graficoComentarios = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.graficoUsuarios = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.graficoUsuarios)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.graficoComentarios)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.graficoPublicacoes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graficoComentarios)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graficoUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,6 +65,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(417, 295);
             this.panel1.TabIndex = 0;
+            // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.BackColor = System.Drawing.Color.Turquoise;
+            this.btnRelatorio.FlatAppearance.BorderSize = 0;
+            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.ForeColor = System.Drawing.Color.White;
+            this.btnRelatorio.Location = new System.Drawing.Point(138, 239);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(137, 39);
+            this.btnRelatorio.TabIndex = 5;
+            this.btnRelatorio.Text = "Gerar Relatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = false;
+            // 
+            // graficoUsuarios
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.graficoUsuarios.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.graficoUsuarios.Legends.Add(legend1);
+            this.graficoUsuarios.Location = new System.Drawing.Point(21, 60);
+            this.graficoUsuarios.Name = "graficoUsuarios";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.graficoUsuarios.Series.Add(series1);
+            this.graficoUsuarios.Size = new System.Drawing.Size(373, 173);
+            this.graficoUsuarios.TabIndex = 4;
+            this.graficoUsuarios.Text = "chart3";
             // 
             // label1
             // 
@@ -87,6 +117,22 @@
             this.panel3.Size = new System.Drawing.Size(377, 247);
             this.panel3.TabIndex = 1;
             // 
+            // graficoComentarios
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.graficoComentarios.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.graficoComentarios.Legends.Add(legend2);
+            this.graficoComentarios.Location = new System.Drawing.Point(18, 54);
+            this.graficoComentarios.Name = "graficoComentarios";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.graficoComentarios.Series.Add(series2);
+            this.graficoComentarios.Size = new System.Drawing.Size(346, 173);
+            this.graficoComentarios.TabIndex = 3;
+            this.graficoComentarios.Text = "chart2";
+            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,17 +154,6 @@
             this.panel4.Size = new System.Drawing.Size(385, 247);
             this.panel4.TabIndex = 1;
             // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(45, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Total de Publicações";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // graficoPublicacoes
             // 
             chartArea3.Name = "ChartArea1";
@@ -135,51 +170,16 @@
             this.graficoPublicacoes.TabIndex = 2;
             this.graficoPublicacoes.Text = "chart1";
             // 
-            // graficoComentarios
+            // label2
             // 
-            chartArea2.Name = "ChartArea1";
-            this.graficoComentarios.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.graficoComentarios.Legends.Add(legend2);
-            this.graficoComentarios.Location = new System.Drawing.Point(18, 54);
-            this.graficoComentarios.Name = "graficoComentarios";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.graficoComentarios.Series.Add(series2);
-            this.graficoComentarios.Size = new System.Drawing.Size(346, 173);
-            this.graficoComentarios.TabIndex = 3;
-            this.graficoComentarios.Text = "chart2";
-            // 
-            // graficoUsuarios
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.graficoUsuarios.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.graficoUsuarios.Legends.Add(legend1);
-            this.graficoUsuarios.Location = new System.Drawing.Point(21, 60);
-            this.graficoUsuarios.Name = "graficoUsuarios";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.graficoUsuarios.Series.Add(series1);
-            this.graficoUsuarios.Size = new System.Drawing.Size(373, 173);
-            this.graficoUsuarios.TabIndex = 4;
-            this.graficoUsuarios.Text = "chart3";
-            // 
-            // btnRelatorio
-            // 
-            this.btnRelatorio.BackColor = System.Drawing.Color.Turquoise;
-            this.btnRelatorio.FlatAppearance.BorderSize = 0;
-            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorio.ForeColor = System.Drawing.Color.White;
-            this.btnRelatorio.Location = new System.Drawing.Point(130, 239);
-            this.btnRelatorio.Name = "btnRelatorio";
-            this.btnRelatorio.Size = new System.Drawing.Size(137, 39);
-            this.btnRelatorio.TabIndex = 5;
-            this.btnRelatorio.Text = "Gerar Relatorio";
-            this.btnRelatorio.UseVisualStyleBackColor = false;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(45, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(282, 28);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Total de Publicações";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmInicio
             // 
@@ -195,11 +195,11 @@
             this.Text = "FrmInicio";
             this.Load += new System.EventHandler(this.FrmInicio_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.graficoUsuarios)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.graficoComentarios)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.graficoPublicacoes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graficoComentarios)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graficoUsuarios)).EndInit();
             this.ResumeLayout(false);
 
         }

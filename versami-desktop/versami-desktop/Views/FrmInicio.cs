@@ -4,10 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+using versami_desktop.Controllers;
 using versami_desktop.Entities;
 using versami_desktop.Util;
 
@@ -15,8 +18,9 @@ namespace versami_desktop.Views
 {
     public partial class FrmInicio: Form
     {
-        Conexao con;
-        DataTable dt; 
+        List<int> totalPublicacao = new List<int>();
+        List<String> mesPublicacao = new List<string>();
+        
         public FrmInicio()
         {
             InitializeComponent();
@@ -25,47 +29,33 @@ namespace versami_desktop.Views
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-            /*
-            lblTotUsers.Text = contarInfos("SELECT COUNT(*) FROM tblUsuario");
-            lblTotPost.Text = contarInfos("SELECT COUNT(*) FROM tblPublicacao");
-            lblTotComentarios.Text = contarInfos("SELECT COUNT(*) FROM tblComentario");
-            lblTopUser.Text = "@" + topUser();
-            */
+            preencherEstatisticas();
         }
 
-        private string contarInfos(string sql)
+        private void preencherEstatisticas()
         {
-            string total = "";
-            try
+            DashboardController dc = new DashboardController();
+            DataTable dt = dc.obterEstatisticasPublicacoes();
+
+            if (dt == null || dt.Rows.Count <= 0) return;
+            
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                con = new Conexao();
-                dt = con.executarSQL(sql);
-                total = dt.Rows[0][0].ToString();
-            }
-            catch(Exception e)
-            {
-                Debug.WriteLine("Erro Consulta SQL: " + e.Message);
+                this.totalPublicacao.Add(Convert.ToInt32(dt.Rows[i]["TOTAL"].ToString()));
+                int numMes = Convert.ToInt32(dt.Rows[i]["MES"].ToString());
+                string mes = new CultureInfo("pt-BR").DateTimeFormat.GetMonthName(numMes);
+                this.mesPublicacao.Add(mes);
             }
 
-            return total;
+            graficoPublicacoes.Series.Clear();
+            graficoPublicacoes.Palette = ChartColorPalette.None;
+            graficoPublicacoes.BackColor = Color.FromArgb(56, 77, 108);
+            
+            for(int i = 0; i < dt.Rows.Count; i++)
+            {
+                Series series = graficoPublicacoes.Series.Add(mesPublicacao.ElementAt(i));
+                series.Points.Add(totalPublicacao.ElementAt(i));
+            }
         }
-
-        private string topUser()
-        {
-            string sql = "SELECT TOP 1 arroba_usuario FROM tblUsuario";
-            string resultado = "";
-
-            try
-            {
-                con = new Conexao();
-                dt = con.executarSQL(sql);
-                resultado = dt.Rows[0][0].ToString();
-            }catch(Exception e)
-            {
-                Debug.WriteLine("Erro Consulta SQL: " + e.Message);
-            }
-            return resultado;
-        }
-
     }
 }

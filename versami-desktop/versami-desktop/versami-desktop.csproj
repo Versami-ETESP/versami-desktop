@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AcessoController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\LivroController.cs" />
     <Compile Include="Controllers\DenunciaController.cs" />
     <Compile Include="Entities\Admin.cs" />
