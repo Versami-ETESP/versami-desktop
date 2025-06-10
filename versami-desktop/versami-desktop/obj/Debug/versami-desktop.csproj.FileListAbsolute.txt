@@ -43,3 +43,26 @@ C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmVisualizarPost.resources
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaBlog.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe.config
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.pdb
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Properties.Resources.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.FrmPrincipal.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmAlteraSenha.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBlog.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaAutor.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaBlog.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaGenero.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaLivro.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmCadastro.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmInicio.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmLivros.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.frmLogin.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmPosts.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmUsuarios.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmVisualizarPost.resources
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.GenerateResource.cache
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
+C:\Users\julia\OneDrive\Documentos\GitHub\versami-desktop-gerarpdf\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
