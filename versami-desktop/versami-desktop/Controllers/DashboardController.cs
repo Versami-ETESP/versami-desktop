@@ -30,8 +30,8 @@ namespace versami_desktop.Controllers
         public DataTable obterEstatisticasPublicacoes()
         {
             DateTime data = DateTime.Now;
-                      var sql = "SELECT COUNT(*) AS TOTAL, MONTH(dataPublic) AS MES " +
-                "FROM tblPublicacao WHERE YEAR(dataPublic) = @ano GROUP BY MONTH(dataPublic)";
+            var sql = "SELECT COUNT(*) AS TOTAL, MONTH(dataPublic) AS MES " +
+                     "FROM tblPublicacao WHERE YEAR(dataPublic) = @ano GROUP BY MONTH(dataPublic)";
 
             try
             {
@@ -42,6 +42,25 @@ namespace versami_desktop.Controllers
             }catch(Exception e)
             {
                 Debug.WriteLine("Erro ao consultar publicacoes: " + e.Message);
+            }
+            return this.dt;
+        }
+
+        public DataTable obterEstatisticasComentarios()
+        {
+            DateTime data = DateTime.Now;
+            string sql = "SELECT COUNT(*) AS TOTAL, MONTH(data_coment) AS MES " +
+                "FROM tblComentario WHERE YEAR(data_coment) = @ano GROUP BY MONTH(data_coment)";
+
+            try
+            {
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand(sql);
+                cmd.Parameters.AddWithValue("@ano", data.Year);
+                this.dt = this.con.queryComParametros(cmd);
+            }catch(Exception e)
+            {
+                Debug.WriteLine("Erro ao consultar comentarios: " + e.Message);
             }
             return this.dt;
         }

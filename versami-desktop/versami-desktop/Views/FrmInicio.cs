@@ -18,9 +18,8 @@ namespace versami_desktop.Views
 {
     public partial class FrmInicio: Form
     {
-        List<int> totalPublicacao = new List<int>();
-        List<String> mesPublicacao = new List<string>();
-        
+        DashboardController dc;
+
         public FrmInicio()
         {
             InitializeComponent();
@@ -29,22 +28,24 @@ namespace versami_desktop.Views
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-            preencherEstatisticas();
+            preencherGraficoPublicacoes();
         }
 
-        private void preencherEstatisticas()
+        private void preencherGraficoPublicacoes()
         {
-            DashboardController dc = new DashboardController();
+            dc = new DashboardController();
             DataTable dt = dc.obterEstatisticasPublicacoes();
+            List<int> totalPublicacao = new List<int>();
+            List<String> mesPublicacao = new List<string>();
 
             if (dt == null || dt.Rows.Count <= 0) return;
             
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                this.totalPublicacao.Add(Convert.ToInt32(dt.Rows[i]["TOTAL"].ToString()));
+                totalPublicacao.Add(Convert.ToInt32(dt.Rows[i]["TOTAL"].ToString()));
                 int numMes = Convert.ToInt32(dt.Rows[i]["MES"].ToString());
                 string mes = new CultureInfo("pt-BR").DateTimeFormat.GetMonthName(numMes);
-                this.mesPublicacao.Add(mes);
+                mesPublicacao.Add(mes);
             }
 
             graficoPublicacoes.Series.Clear();
@@ -57,5 +58,7 @@ namespace versami_desktop.Views
                 series.Points.Add(totalPublicacao.ElementAt(i));
             }
         }
+
+
     }
 }
