@@ -29,6 +29,8 @@ namespace versami_desktop.Views
         private void FrmInicio_Load(object sender, EventArgs e)
         {
             preencherGraficoPublicacoes();
+            preencherGraficoComentarios();
+            preencherGraficoUsers();
         }
 
         private void preencherGraficoPublicacoes()
@@ -59,6 +61,58 @@ namespace versami_desktop.Views
             }
         }
 
+        private void preencherGraficoComentarios()
+        {
+            dc = new DashboardController();
+            DataTable dt = dc.obterEstatisticasComentarios();
+            List<int> totalComent = new List<int>();
+            List<String> mesPublicacao = new List<string>();
 
+            if (dt == null || dt.Rows.Count <= 0) return;
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                totalComent.Add(Convert.ToInt32(dt.Rows[i]["TOTAL"].ToString()));
+                int numMes = Convert.ToInt32(dt.Rows[i]["MES"].ToString());
+                string mes = new CultureInfo("pt-BR").DateTimeFormat.GetMonthName(numMes);
+                mesPublicacao.Add(mes);
+            }
+
+            graficoComentarios.Series.Clear();
+            graficoComentarios.Palette = ChartColorPalette.None;
+            graficoComentarios.BackColor = Color.FromArgb(56, 77, 108);
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                Series series = graficoComentarios.Series.Add(mesPublicacao.ElementAt(i));
+                series.Points.Add(totalComent.ElementAt(i));
+            }
+        }
+
+        private void preencherGraficoUsers()
+        {
+            dc = new DashboardController();
+            DataTable dt = dc.obterEstatisticasUsers();
+            List<int> totalUser = new List<int>();
+            List<String> faixaEtaria = new List<string>();
+
+            if (dt == null || dt.Rows.Count <= 0) return;
+            
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                totalUser.Add(Convert.ToInt32(dt.Rows[i]["Quantidade"].ToString()));
+                faixaEtaria.Add(dt.Rows[i]["FaixaEtaria"].ToString() + " anos");
+            }
+
+            graficoUsuarios.Series.Clear();
+            graficoUsuarios.Palette = ChartColorPalette.None;
+            graficoUsuarios.BackColor = Color.FromArgb(56, 77, 108);
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                Series series = graficoUsuarios.Series.Add(faixaEtaria.ElementAt(i));
+                series.Points.Add(totalUser.ElementAt(i));
+            }
+        }
     }
 }

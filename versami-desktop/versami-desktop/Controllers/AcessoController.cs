@@ -19,7 +19,6 @@ namespace versami_desktop.Controllers
 
         public bool logar(string login, string senha)
         {
-            Debug.WriteLine("Login: " + login + " Senha: " + senha);
             bool resultado = false;
 
             try
@@ -31,8 +30,7 @@ namespace versami_desktop.Controllers
                 cmd.Parameters.AddWithValue("@senha", senha);
 
                 this.dt = con.queryComParametros(cmd);
-                Debug.WriteLine("dt é nulo: " + this.dt == null);
-                Debug.WriteLine("dt linhas: " + this.dt.Rows.Count);
+                
                 if(this.dt != null && this.dt.Rows.Count > 0)
                 {
                     Admin adm = new Admin();

@@ -64,5 +64,21 @@ namespace versami_desktop.Controllers
             }
             return this.dt;
         }
+
+        public DataTable obterEstatisticasUsers()
+        {
+            string sql = "usp_faixaEtatariaUsers";
+            try
+            {
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand(sql);
+                this.dt = this.con.queryComParametros(cmd);
+            }catch(Exception e)
+            {
+                Debug.WriteLine("Erro ao executar procedure de estatistica: " + e.Message);
+            }
+
+            return this.dt;
+        }
     }
 }

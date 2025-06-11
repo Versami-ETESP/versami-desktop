@@ -126,7 +126,7 @@ namespace versami_desktop.Controllers
 
         public DataTable listarStatusDenuncia()
         {
-            string sql = "SELECT * FROM tblStatusDenuncia";
+            string sql = "SELECT * FROM tblStatusDenuncia ORDER BY idStatusDenuncia";
 
             try
             {
