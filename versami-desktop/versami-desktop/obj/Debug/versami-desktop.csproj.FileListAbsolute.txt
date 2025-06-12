@@ -1,24 +1,3 @@
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe.config
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.pdb
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.AssemblyReference.cache
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Properties.Resources.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.GenerateResource.cache
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.FrmPrincipal.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBlog.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmInicio.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmLivros.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmPosts.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmUsuarios.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.frmLogin.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmCadastro.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaAutor.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaGenero.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmAlteraSenha.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaLivro.resources
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe.config
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.pdb
@@ -41,7 +20,28 @@ C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
 C:\Users\Vera\Desktop\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmVisualizarPost.resources
-D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaBlog.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe.config
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.exe
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\versami-desktop.pdb
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\bin\Debug\itextsharp.dll
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.AssemblyReference.cache
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Properties.Resources.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.FrmPrincipal.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmAlteraSenha.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBlog.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaAutor.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaBlog.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaGenero.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmBuscaLivro.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmCadastro.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmInicio.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmLivros.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.frmLogin.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmPosts.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmUsuarios.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami_desktop.Views.FrmVisualizarPost.resources
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.GenerateResource.cache
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.csproj.CoreCompileInputs.cache
 D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-.DA10B7C8.Up2Date
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.exe
+D:\Ygor Gabriel\Documents\GitHub\versami-desktop\versami-desktop\versami-desktop\obj\Debug\versami-desktop.pdb

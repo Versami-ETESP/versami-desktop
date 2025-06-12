@@ -8,6 +8,11 @@ namespace versami_desktop.Entities
 {
     class Admin
     {
+        public const int PERMISSAO_MASTER = 1;
+        public const int PERMISSAO_LIVROS = 2;
+        public const int PERMISSAO_MODERAR = 3;
+        public const int PERMISSAO_BLOG = 4;
+
         private static string nome, arroba;
         private static int idAdm, permissao;
         private string email, senha, resposta;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnBlog = new System.Windows.Forms.Button();
@@ -217,6 +218,7 @@
             this.ClientSize = new System.Drawing.Size(1148, 639);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelPrincipal);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmPrincipal";
             this.ShowIcon = false;

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon App.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="itextsharp">
       <HintPath>E:\3º módulo\Desenvolvimento de Sistemas 2\PrjAvaliacao1\PrjAvaliacao1\bin\Debug\itextsharp.dll</HintPath>
@@ -265,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\placeholder_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon App.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

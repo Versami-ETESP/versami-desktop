@@ -89,6 +89,7 @@ namespace versami_desktop.Views
                 if (cd.cadastrar(adm))
                 {
                     MessageBox.Show("Administrador cadastrado!");
+                    limparCampos();
                 }
                 else
                 {
@@ -117,6 +118,18 @@ namespace versami_desktop.Views
             cbPergunta.DataSource = cd.listaPerguntas();
             cbPergunta.ValueMember = "idPergunta";
             cbPergunta.DisplayMember = "pergunta";
+        }
+
+        private void limparCampos()
+        {
+            txtNome.Text = "";
+            txtEmail.Text = "";
+            txtArroba.Text = "";
+            txtSenha.Text = "";
+            txtConfirma.Text = "";
+            txtResposta.Text = "";
+            cbPermissao.SelectedIndex = 1;
+            cbPergunta.SelectedIndex = 0;
         }
 
     }

@@ -14,6 +14,7 @@ namespace versami_desktop
 {
     public partial class FrmPrincipal: Form
     {
+        Admin adm = new Admin();
         private Form frmAtivo;
         public FrmPrincipal()
         {
@@ -55,35 +56,63 @@ namespace versami_desktop
         {
             frmLogin fl = new frmLogin();
             fl.ShowDialog();
-            Admin adm = new Admin();
-            lblNomeAdmin.Text = adm.getNome();
-            lblPermissao.Text = tipoAdmin(adm.getPermissao());
+            lblNomeAdmin.Text = this.adm.getNome();
+            lblPermissao.Text = tipoAdmin(this.adm.getPermissao());
             activeButton(btnInicio);
             formShow(new FrmInicio());
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            activeButton(btnUsuarios);
-            formShow(new FrmCadastro());
+            if(adm.getPermissao() == Admin.PERMISSAO_MASTER)
+            {
+                activeButton(btnUsuarios);
+                formShow(new FrmCadastro());
+            }
+            else
+            {
+                MessageBox.Show("Você não tem a permissão necessária para acessar essa tela.", "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            
         }
 
         private void btnLivros_Click(object sender, EventArgs e)
         {
-            activeButton(btnLivros);
-            formShow(new FrmLivros());
+            if (adm.getPermissao() == Admin.PERMISSAO_MASTER || adm.getPermissao() == Admin.PERMISSAO_LIVROS)
+            {
+                activeButton(btnLivros);
+                formShow(new FrmLivros());
+            }
+            else
+            {
+                MessageBox.Show("Você não tem a permissão necessária para acessar essa tela.", "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
 
         private void btnPosts_Click(object sender, EventArgs e)
         {
-            activeButton(btnPosts);
-            formShow(new FrmPosts());
+            if (adm.getPermissao() == Admin.PERMISSAO_MASTER || adm.getPermissao() == Admin.PERMISSAO_MODERAR)
+            {
+                activeButton(btnPosts);
+                formShow(new FrmPosts());
+            }
+            else
+            {
+                MessageBox.Show("Você não tem a permissão necessária para acessar essa tela.", "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
 
         private void btnBlog_Click(object sender, EventArgs e)
         {
-            activeButton(btnBlog);
-            formShow(new FrmBlog());
+            if (adm.getPermissao() == Admin.PERMISSAO_MASTER || adm.getPermissao() == Admin.PERMISSAO_BLOG)
+            {
+                activeButton(btnBlog);
+                formShow(new FrmBlog());
+            }
+            else
+            {
+                MessageBox.Show("Você não tem a permissão necessária para acessar essa tela.", "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -96,18 +125,16 @@ namespace versami_desktop
         {
             switch (permissao)
             {
-                case 1:
+                case Admin.PERMISSAO_MASTER:
                     return "ADM Master";
-                case 2:
+                case Admin.PERMISSAO_LIVROS:
                     return "ADM de Livros";
-                case 3:
+                case Admin.PERMISSAO_MODERAR:
                     return "ADM Moderador";
-                case 4:
-                    return "ADM de Usuários";
-                case 5:
+                case Admin.PERMISSAO_BLOG:
                     return "ADM do Blog";
                 default:
-                    return "Administrador";
+                    return "ADMINISTRADOR";
             }
         }
     }
