@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\controllers\\denunciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\controllers\\denunciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\views\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\views\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|d:\\ygor gabriel\\documents\\github\\versami-desktop\\versami-desktop\\versami-desktop\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{156318A7-B619-4F4B-AAAB-81BF72FB43C5}|versami-desktop\\versami-desktop.csproj|solutionrelative:versami-desktop\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,63 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DenunciaController.cs",
-              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\DenunciaController.cs",
-              "RelativeDocumentMoniker": "versami-desktop\\Controllers\\DenunciaController.cs",
-              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\DenunciaController.cs",
-              "RelativeToolTip": "versami-desktop\\Controllers\\DenunciaController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAwwIAAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T23:50:45.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AcessoController.cs",
-              "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\AcessoController.cs",
-              "RelativeDocumentMoniker": "versami-desktop\\Controllers\\AcessoController.cs",
-              "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\AcessoController.cs",
-              "RelativeToolTip": "versami-desktop\\Controllers\\AcessoController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAACAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T23:21:33.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "versami-desktop\\Controllers\\DashboardController.cs",
               "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "versami-desktop\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAUwFEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowGQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T02:07:54.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FrmInicio.cs",
               "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmInicio.cs",
               "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmInicio.cs",
               "ToolTip": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmInicio.cs",
               "RelativeToolTip": "versami-desktop\\Views\\FrmInicio.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAUwGcAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwMYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-09T00:14:13.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FrmInicio.cs [Design]",
               "DocumentMoniker": "D:\\Ygor Gabriel\\Documents\\GitHub\\versami-desktop\\versami-desktop\\versami-desktop\\Views\\FrmInicio.cs",
               "RelativeDocumentMoniker": "versami-desktop\\Views\\FrmInicio.cs",

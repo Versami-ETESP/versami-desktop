@@ -80,5 +80,24 @@ namespace versami_desktop.Controllers
 
             return this.dt;
         }
+
+        public DataTable obterTopUsers()
+        {
+            string sql = "SELECT TOP 10 u.nome, u.arroba_usuario, COUNT(p.idPublicacao) AS total_publicacoes " +
+                "FROM tblUsuario u " +
+                "JOIN tblPublicacao p ON u.idUsuario = p.idUsuario " +
+                "GROUP BY u.nome, u.arroba_usuario " +
+                "ORDER BY total_publicacoes DESC";
+            try
+            {
+                this.con = new Conexao();
+                SqlCommand cmd = new SqlCommand(sql);
+                this.dt = this.con.queryComParametros(cmd);
+            }catch(Exception e)
+            {
+                Debug.WriteLine("Erro ao obter top usuarios: " + e.Message);
+            }
+            return this.dt;
+        }
     }
 }
