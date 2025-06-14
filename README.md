@@ -53,7 +53,14 @@ String strConexao = "Password=<SEU_USUARIO>; Persist Security Info=True; User ID
 
 ### :white_check_mark: Pronto!
 
-Com tudo configurado, você pode executar a aplicação diretamente pelo Visual Studio, clicando em "Iniciar".
+Com tudo configurado, você pode executar a aplicação diretamente pelo Visual Studio, clicando em "Iniciar". Para entrar na aplicação você pode usar os seguintes logins de teste
+
+| Login         | Senha    |
+| :------------ | :------- |
+| master-admin  | 12345678 |
+| livros-admin  | 12345678 |
+| moderador-admin | 12345678 |
+| blog-admin    | 12345678 |
 
 ---
 
@@ -65,5 +72,3 @@ Se preferir executar a aplicação diretamente via `.exe`:
 * Após a compilação, abra a pasta do projeto e navegue até: `versami-desktop > bin > Debug > versami-desktop.exe`
 
 ![image](https://github.com/user-attachments/assets/90de1aee-11bb-40ca-83f8-d3fe92de5ac2)
-
-
