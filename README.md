@@ -1,4 +1,4 @@
-# 💻 VERSAMI DESKTOP
+# 🖥️ VERSAMI DESKTOP
 
 Esta aplicação é um dos componentes do Trabalho de Conclusão de Curso (TCC) técnico da **ETEC de São Paulo**, desenvolvida pelos alunos **Julia Belchior**, **Matheus Canesso**, **Thamiris Fernandes** e **Ygor Silva**.
 
