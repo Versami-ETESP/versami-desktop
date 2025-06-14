@@ -3,7 +3,7 @@
 Esta aplicação é um dos componentes do Trabalho de Conclusão de Curso (TCC) técnico da **ETEC de São Paulo**, desenvolvida pelos alunos **Julia Belchior**, **Matheus Canesso**, **Thamiris Fernandes** e **Ygor Silva**.
 
 ## :warning: Atenção
-Antes de iniciar a configuração do aplicativo mobile, é **obrigatório executar todos os scripts de banco de dados** que estão disponíveis no repositório [`versami-documentacao`](https://github.com/Versami-ETESP/versami-documentacao)
+Antes de iniciar a configuração da aplicação desktop, é **obrigatório executar todos os scripts de banco de dados** que estão disponíveis no repositório [`versami-documentacao`](https://github.com/Versami-ETESP/versami-documentacao)
 
 ## ☑️ Pré-requisitos
 
